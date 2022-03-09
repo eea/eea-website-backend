@@ -1,3 +1,4 @@
 eea.dexterity.indicators
 eea.dexterity.themes
 eea.progress.workflow
+pas.plugins.oidc
