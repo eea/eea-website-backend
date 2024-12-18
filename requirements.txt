@@ -6,4 +6,5 @@ eea.progress.workflow
 eea.website.policy
 eea.stringinterp
 eea.api.dataconnector
+eea.api.versions
 Products.CMFEditions
