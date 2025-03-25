@@ -1,4 +1,4 @@
-FROM eeacms/plone-backend:6.0.13-19
+FROM eeacms/plone-backend:6.0.13-37
 ENV PROFILES="eea.website.policy:default"
 
 # Custom plone.volto version fixes for:
@@ -11,3 +11,5 @@ RUN ./bin/pip install -r requirements.txt -c constraints.txt \
 
 # Beta
 RUN ./bin/pip install -U git+https://github.com/eea/eea.dexterity.indicators.git@embed-content
+RUN ./bin/pip install -U git+https://github.com/eea/eea.plotly.git@eea.plotly
+RUN ./bin/pip install -U git+https://github.com/eea/eea.api.dataconnector.git@eea.api.dataconnector
