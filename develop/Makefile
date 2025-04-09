@@ -42,7 +42,7 @@ endif
 ##############################################################################
 # SETTINGS AND VARIABLE
 
-PLONE_VERSION=6.0.13
+PLONE_VERSION=6.0.15
 #`docker run -i --rm eeacms/plone-backend env | grep PLONE_VERSION | sed "s/PLONE_VERSION=//g"`
 PYTHON?=python3.11
 
@@ -57,7 +57,7 @@ clean:			## Cleanup environment
 .PHONY: bootstrap
 bootstrap:		## Bootstrap python environment
 	$(PYTHON) -m venv .
-	bin/pip install --upgrade pip mxdev pylint black -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt"
+	bin/pip install --upgrade pip mxdev plonecli pylint black ruff -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt"
 
 .PHONY: install
 install:		## Install Plone and develop add-ons
