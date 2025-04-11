@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-4](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-4) - 2025-04-11T23:16:29Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 10.2 ~ 11.0
+
+* Refactor: Switch indicator figure blocks to embed_content
+  [dobri1408 - refs #274326]
+
+
 ## [6.0.15-3](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-3) - 2025-04-11T17:01:40Z
 
 ### Plone
