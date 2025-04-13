@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [6.0.15-5](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-5) - 2025-04-13T23:49:56Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-2 ~ 6.0.15-3 
+
+##### eeacms/plone-backend:[6.0.15-3](https://github.com/eea/plone-backend/releases/tag/6.0.15-3)
+###### Dependency updates
+
+###### New packages
+
+###### [pas.plugins.authomatic](https://pypi.org/project/pas.plugins.authomatic/#changelog): 2.0.0rc3
+
+###### Internal
+
+- Release pas.plugins.authomatic 2.0.0rc3 - [alin - [`6c9e42b`](https://github.com/eea/plone-backend/commit/6c9e42b009bbf8cf008030023dbeee56ff9e1ebe)]
+
+
 ## [6.0.15-4](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-4) - 2025-04-11T23:16:29Z
 
 ### Dependency updates
