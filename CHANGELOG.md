@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.15-6](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-6) - 2025-04-14T23:16:29Z
+
+### Internal
+
+- chore: Build and Push ARM Docker Image with GitHub Actions - [Eduard Fironda -  [`ac10e02`](https://github.com/eea/eea-website-backend/commit/ac10e02535b4fded4723588e22307cda88db835b)]
+
 ## [6.0.15-5](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-5) - 2025-04-13T23:49:56Z
 
 ### Plone
