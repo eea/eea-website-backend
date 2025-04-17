@@ -13,3 +13,4 @@ RUN ./bin/pip install -r requirements.txt -c constraints.txt \
 RUN ./bin/pip install -U git+https://github.com/eea/eea.dexterity.indicators.git@embed-content
 RUN ./bin/pip install -U git+https://github.com/eea/eea.plotly.git@develop
 RUN ./bin/pip install -U git+https://github.com/eea/eea.api.dataconnector.git@develop
+RUN ./bin/pip install -U git+https://github.com/collective/rss-provider.git
