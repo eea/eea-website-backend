@@ -1,6 +1,502 @@
 # Changelog
 
 
+## [6.0.15-6](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-6) - 2025-04-14T23:16:29Z
+
+### Internal
+
+- chore: Build and Push ARM Docker Image with GitHub Actions - [Eduard Fironda -  [`ac10e02`](https://github.com/eea/eea-website-backend/commit/ac10e02535b4fded4723588e22307cda88db835b)]
+
+## [6.0.15-5](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-5) - 2025-04-13T23:49:56Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-2 ~ 6.0.15-3 
+
+##### eeacms/plone-backend:[6.0.15-3](https://github.com/eea/plone-backend/releases/tag/6.0.15-3)
+###### Dependency updates
+
+###### New packages
+
+###### [pas.plugins.authomatic](https://pypi.org/project/pas.plugins.authomatic/#changelog): 2.0.0rc3
+
+###### Internal
+
+- Release pas.plugins.authomatic 2.0.0rc3 - [alin - [`6c9e42b`](https://github.com/eea/plone-backend/commit/6c9e42b009bbf8cf008030023dbeee56ff9e1ebe)]
+
+
+## [6.0.15-4](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-4) - 2025-04-11T23:16:29Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 10.2 ~ 11.0
+
+* Refactor: Switch indicator figure blocks to embed_content
+  [dobri1408 - refs #274326]
+
+
+## [6.0.15-3](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-3) - 2025-04-11T17:01:40Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-1 ~ 6.0.15-2 
+
+##### eeacms/plone-backend:[6.0.15-2](https://github.com/eea/plone-backend/releases/tag/6.0.15-2)
+###### Dependency updates
+
+###### Removed packages
+
+###### [pas.plugins.authomatic](https://pypi.org/project/pas.plugins.authomatic/#changelog): 2.0.0rc2
+
+###### Internal
+
+- fix: TypeError: argument of type 'bool' is not iterable - refs #286733 - [Alin Voinea - [`0909018`](https://github.com/eea/plone-backend/commit/09090185584cff84b646564b5913d8608e0716f9)]
+
+
+## [6.0.15-2](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-2) - 2025-04-09T23:20:44Z
+
+### Internal
+
+- chore: Upgrade dev environment to Plone 6.0.15 - [Alin Voinea -  [`23a148c`](https://github.com/eea/eea-website-backend/commit/23a148c86ea1b0bddcb4857d62ba420663187ec9)]
+
+## [6.0.15-1](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-1) - 2025-04-09T16:13:21Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.15-1 
+
+##### eeacms/plone-backend:[6.0.15-1](https://github.com/eea/plone-backend/releases/tag/6.0.15-1)
+###### Plone
+
+###### Upgrade 6.0.14 ~ 6.0.15 
+
+* Plone [6.0.15](https://plone.org/download/releases/6.0.15)
+* Plone [6.0.15rc2](https://plone.org/download/releases/6.0.15rc2)
+* Plone [6.0.15rc1](https://plone.org/download/releases/6.0.15rc1)
+
+###### Dependency updates
+
+###### [pas.plugins.authomatic](https://pypi.org/project/pas.plugins.authomatic/#changelog): 1.4.0 ~ 2.0.0rc2
+
+###### Internal
+
+- Release Plone 6.0.15 - [Alin Voinea - [`f94d45e`](https://github.com/eea/plone-backend/commit/f94d45e833b9c204eb8654429dc0177ef9029584)]
+##### eeacms/plone-backend:[6.0.14-1](https://github.com/eea/plone-backend/releases/tag/6.0.14-1)
+###### Plone
+
+###### Upgrade 6.0.13 ~ 6.0.14 
+
+* Plone [6.0.14](https://plone.org/download/releases/6.0.14)
+
+###### Dependency updates
+
+###### [PyYAML](https://pypi.org/project/PyYAML/#changelog): 6.0.1 ~ 6.0.2
+
+###### [elastic-transport](https://pypi.org/project/elastic-transport/#changelog): 8.15.0 ~ 8.17.1
+
+###### [elasticsearch](https://pypi.org/project/elasticsearch/#changelog): 8.15.1 ~ 8.17.2
+
+###### [eventlet](https://pypi.org/project/eventlet/#changelog): 0.37.0 ~ 0.39.1
+
+###### [pyasn1-modules](https://pypi.org/project/pyasn1-modules/#changelog): 0.4.1 ~ 0.4.2
+
+###### Internal
+
+- Build and Push ARM Docker Image with GitHub Actions - [Eddie - [`b702fe9`](https://github.com/eea/plone-backend/commit/b702fe94ebc1a8371fc7f5bd045346987eaba225)]
+- fix indentation - [Eddie - [`7d0f8ba`](https://github.com/eea/plone-backend/commit/7d0f8ba34a85f5b66c460c8148ad7158d9296c83)]
+- Release plone-backend 6.0.14 - [Alin Voinea - [`f4fcf2f`](https://github.com/eea/plone-backend/commit/f4fcf2fc6d6495508c6bc7a8c9d2d3c8295fff70)]
+##### eeacms/plone-backend:[6.0.13-20](https://github.com/eea/plone-backend/releases/tag/6.0.13-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 7.0 ~ 7.1
+
+* Change: Make upgrade step for svg update more efficent - refs #276995
+ [avoinea]
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.14-1](https://github.com/eea/eea-website-backend/releases/tag/6.0.14-1) - 2025-04-09T13:51:41Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.14-1 
+
+##### eeacms/plone-backend:[6.0.14-1](https://github.com/eea/plone-backend/releases/tag/6.0.14-1)
+###### Plone
+
+###### Upgrade 6.0.13 ~ 6.0.14 
+
+* Plone [6.0.14](https://plone.org/download/releases/6.0.14)
+
+###### Dependency updates
+
+###### [PyYAML](https://pypi.org/project/PyYAML/#changelog): 6.0.1 ~ 6.0.2
+
+###### [elastic-transport](https://pypi.org/project/elastic-transport/#changelog): 8.15.0 ~ 8.17.1
+
+###### [elasticsearch](https://pypi.org/project/elasticsearch/#changelog): 8.15.1 ~ 8.17.2
+
+###### [eventlet](https://pypi.org/project/eventlet/#changelog): 0.37.0 ~ 0.39.1
+
+###### [pyasn1-modules](https://pypi.org/project/pyasn1-modules/#changelog): 0.4.1 ~ 0.4.2
+
+###### Internal
+
+- Build and Push ARM Docker Image with GitHub Actions - [Eddie - [`b702fe9`](https://github.com/eea/plone-backend/commit/b702fe94ebc1a8371fc7f5bd045346987eaba225)]
+- fix indentation - [Eddie - [`7d0f8ba`](https://github.com/eea/plone-backend/commit/7d0f8ba34a85f5b66c460c8148ad7158d9296c83)]
+- Release plone-backend 6.0.14 - [Alin Voinea - [`f4fcf2f`](https://github.com/eea/plone-backend/commit/f4fcf2fc6d6495508c6bc7a8c9d2d3c8295fff70)]
+##### eeacms/plone-backend:[6.0.13-20](https://github.com/eea/plone-backend/releases/tag/6.0.13-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 7.0 ~ 7.1
+
+* Change: Make upgrade step for svg update more efficent - refs #276995
+ [avoinea]
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-52](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-52) - 2025-04-08T23:19:20Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-20 
+
+##### eeacms/plone-backend:[6.0.13-20](https://github.com/eea/plone-backend/releases/tag/6.0.13-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 7.0 ~ 7.1
+
+* Change: Make upgrade step for svg update more efficent - refs #276995
+ [avoinea]
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-51](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-51) - 2025-04-07T23:18:19Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-20 
+
+##### eeacms/plone-backend:[6.0.13-20](https://github.com/eea/plone-backend/releases/tag/6.0.13-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 7.0 ~ 7.1
+
+* Change: Make upgrade step for svg update more efficent - refs #276995
+ [avoinea]
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-50](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-50) - 2025-04-06T23:20:28Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-20 
+
+##### eeacms/plone-backend:[6.0.13-20](https://github.com/eea/plone-backend/releases/tag/6.0.13-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 7.0 ~ 7.1
+
+* Change: Make upgrade step for svg update more efficent - refs #276995
+ [avoinea]
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-49](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-49) - 2025-04-05T23:19:07Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-20 
+
+##### eeacms/plone-backend:[6.0.13-20](https://github.com/eea/plone-backend/releases/tag/6.0.13-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 7.0 ~ 7.1
+
+* Change: Make upgrade step for svg update more efficent - refs #276995
+ [avoinea]
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-48](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-48) - 2025-04-04T23:19:35Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-20 
+
+##### eeacms/plone-backend:[6.0.13-20](https://github.com/eea/plone-backend/releases/tag/6.0.13-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 7.0 ~ 7.1
+
+* Change: Make upgrade step for svg update more efficent - refs #276995
+ [avoinea]
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-47](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-47) - 2025-04-03T23:22:31Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-20 
+
+##### eeacms/plone-backend:[6.0.13-20](https://github.com/eea/plone-backend/releases/tag/6.0.13-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 7.0 ~ 7.1
+
+* Change: Make upgrade step for svg update more efficent - refs #276995
+ [avoinea]
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-46](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-46) - 2025-04-02T23:20:06Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-20 
+
+##### eeacms/plone-backend:[6.0.13-20](https://github.com/eea/plone-backend/releases/tag/6.0.13-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 7.0 ~ 7.1
+
+* Change: Make upgrade step for svg update more efficent - refs #276995
+ [avoinea]
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-45](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-45) - 2025-04-01T23:51:31Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-20 
+
+##### eeacms/plone-backend:[6.0.13-20](https://github.com/eea/plone-backend/releases/tag/6.0.13-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 7.0 ~ 7.1
+
+* Change: Make upgrade step for svg update more efficent - refs #276995
+ [avoinea]
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-44](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-44) - 2025-03-31T23:19:50Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-19 
+
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-43](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-43) - 2025-03-30T23:22:35Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-19 
+
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-42](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-42) - 2025-03-30T00:21:22Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-19 
+
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-41](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-41) - 2025-03-29T00:18:38Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-19 
+
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-40](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-40) - 2025-03-28T00:19:56Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-19 
+
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-39](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-39) - 2025-03-27T00:20:12Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-19 
+
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-38](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-38) - 2025-03-26T00:20:50Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-19 
+
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-37](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-37) - 2025-03-25T00:20:02Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-19 
+
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
+## [6.0.13-36](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-36) - 2025-03-22T00:20:45Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.13-17 ~ 6.0.13-19 
+
+##### eeacms/plone-backend:[6.0.13-19](https://github.com/eea/plone-backend/releases/tag/6.0.13-19)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.2 ~ 1.3
+##### eeacms/plone-backend:[6.0.13-18](https://github.com/eea/plone-backend/releases/tag/6.0.13-18)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.1 ~ 1.2
+
+
 ## [6.0.13-35](https://github.com/eea/eea-website-backend/releases/tag/6.0.13-35) - 2025-03-21T00:19:16Z
 
 ### Plone
