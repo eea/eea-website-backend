@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.15-7](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-7) - 2025-04-24T14:59:53Z
+
+### Internal
+
+- fix: Do not upgrade staging on beta / alpha releases - [alin -  [`a890973`](https://github.com/eea/eea-website-backend/commit/a8909730f20dcbd83a8667b9db2b4336fcf1f300)]
+
 ## [6.0.15-6](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-6) - 2025-04-14T23:16:29Z
 
 ### Internal
