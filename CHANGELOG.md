@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [6.0.15-8](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-8) - 2025-04-25T14:21:05Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-3 ~ 6.0.15-4 
+
+##### eeacms/plone-backend:[6.0.15-4](https://github.com/eea/plone-backend/releases/tag/6.0.15-4)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.3 ~ 1.4
+
+
+## [6.0.15-7](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-7) - 2025-04-24T14:59:53Z
+
+### Internal
+
+- fix: Do not upgrade staging on beta / alpha releases - [alin -  [`a890973`](https://github.com/eea/eea-website-backend/commit/a8909730f20dcbd83a8667b9db2b4336fcf1f300)]
+
 ## [6.0.15-6](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-6) - 2025-04-14T23:16:29Z
 
 ### Internal
