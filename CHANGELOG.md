@@ -1,6 +1,23 @@
 # Changelog
 
 
+## [6.0.15-14](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-14) - 2025-05-10T23:16:36Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 11.5 ~ 12.0
+
+* Change: Upgrade step to transform Visualizations to use resolveuid in providerurl
+  [dobri1408 - refs #279158]
+* Breaking: Refactor Visualisation
+  [razvanMiu - refs ]
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 1.1 ~ 1.2
+
+* Change: Add theme property
+  [razvanMiu]
+
+
 ## [6.0.15-13](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-13) - 2025-05-09T23:17:05Z
 
 ### Dependency updates
