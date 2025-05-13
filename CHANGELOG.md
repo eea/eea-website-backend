@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [6.0.15-18](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-18) - 2025-05-13T13:52:18Z
+
+### Dependency updates
+
+#### New packages
+
+##### [rss-provider](https://pypi.org/project/rss-provider/#changelog): 1.0.0
+
+### Internal
+
+- feat: add rss-provider addon - refs #161935 - [Nilesh -  [`f107be4`](https://github.com/eea/eea-website-backend/commit/f107be454f926a5c050b122ad3ff33e42653ad09)]
+
 ## [6.0.15-17](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-17) - 2025-05-12T23:20:40Z
 
 ### Dependency updates
