@@ -9,3 +9,4 @@ eea.api.dataconnector
 eea.api.versions
 eea.plotly
 Products.CMFEditions
+rss-provider
