@@ -1,4 +1,4 @@
-FROM eeacms/plone-backend:6.0.15-8
+FROM eeacms/plone-backend:6.0.15-9
 ENV PROFILES="eea.website.policy:default"
 
 # Custom plone.volto version fixes for:
