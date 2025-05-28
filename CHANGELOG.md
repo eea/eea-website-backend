@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.0.15-20](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-20) - 2025-05-28T14:09:03Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-8 ~ 6.0.15-9 
+
+##### eeacms/plone-backend:[6.0.15-9](https://github.com/eea/plone-backend/releases/tag/6.0.15-9)
+###### Internal
+
+- chore: [JENKINS] remove debug - [valentinab25 - [`120747d`](https://github.com/eea/plone-backend/commit/120747d888aafb924da8483e0e7d86b97bdd3802)]
+
+### Internal
+
+- Update run.sh - [Silviu -  [`431de01`](https://github.com/eea/eea-website-backend/commit/431de0195a12565542d8919fa2901671d7c57281)]
+
 ## [6.0.15-19](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-19) - 2025-05-21T13:58:56Z
 
 ### Plone
