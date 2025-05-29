@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-21](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-21) - 2025-05-29T23:13:35Z
+
+### Dependency updates
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 1.2 ~ 1.3
+
+* Change: Add preview adapter
+  [razvanMiu]
+
+
 ## [6.0.15-20](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-20) - 2025-05-28T14:09:03Z
 
 ### Plone
