@@ -1,6 +1,23 @@
 # Changelog
 
 
+## [6.0.15-22](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-22) - 2025-06-02T23:12:45Z
+
+### Dependency updates
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 1.3 ~ 1.4
+
+* Change: update soer_miniature preview adapter
+  [razvanMiu]
+
+#### Removed packages
+
+##### [Products.CMFEditions](https://pypi.org/project/Products.CMFEditions/#changelog): 4.0.2
+
+### Internal
+
+- Release Products.CMFEditions 4.0.5 - [Alin Voinea -  [`5a14c9f`](https://github.com/eea/eea-website-backend/commit/5a14c9f6fff4551a4008b1de9f62de31b55588ca)]
+
 ## [6.0.15-21](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-21) - 2025-05-29T23:13:35Z
 
 ### Dependency updates
