@@ -1,6 +1,35 @@
 # Changelog
 
 
+## [6.0.15-23](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-23) - 2025-06-03T14:28:05Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-9 ~ 6.0.15-10 
+
+##### eeacms/plone-backend:[6.0.15-10](https://github.com/eea/plone-backend/releases/tag/6.0.15-10)
+###### Dependency updates
+
+###### Downgrades 
+
+###### [collective.regenv](https://pypi.org/project/collective.regenv/#changelog): 1.0.1dev2 ~ 1.0.0
+
+###### New packages
+
+###### [eea.api.controlpanel](https://github.com/eea/eea.api.controlpanel): 1.1
+
+###### Internal
+
+- Release eea.api.controlpanel 1.1. Revert collective.regenv to 1.0.0 - [Alin Voinea - [`4c4ecdd`](https://github.com/eea/plone-backend/commit/4c4ecddf5d188f38267a97886d4b9004568bebf4)]
+
+### Dependency updates
+
+##### [rss-provider](https://pypi.org/project/rss-provider/#changelog): 1.0.0 ~ 1.1.0
+
+### Internal
+
+- Release rss-provider 1.1.0 - [Alin Voinea -  [`fd40193`](https://github.com/eea/eea-website-backend/commit/fd40193bd7e03feabcc5629cdf3a91043b637985)]
+
 ## [6.0.15-22](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-22) - 2025-06-02T23:12:45Z
 
 ### Dependency updates
