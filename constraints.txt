@@ -12,4 +12,4 @@ eea.plotly==1.4
 mo-sql-parsing==9.367.23090
 mo-parsing==8.366.23085
 XlsxWriter==3.0.9
-rss-provider==1.0.0
+rss-provider==1.1.0
