@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [6.0.15-26](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-26) - 2025-06-12T23:13:03Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 11.0 ~ 11.1
+
+* Bug fix: update links to figures on new versions of indicators
+  [dobri1408 - refs #282960]
+* Bug fix: when new version indicator is renamed, it does not replace old one when published
+  [dobri1408 - refs #263578]
+
+
 ## [6.0.15-25](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-25) - 2025-06-11T18:35:02Z
 
 ### Plone
