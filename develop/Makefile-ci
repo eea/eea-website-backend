@@ -56,9 +56,9 @@ clean:			## Cleanup environment
 
 .PHONY: bootstrap
 bootstrap:		## Bootstrap python environment
-	$(PYTHON) -m venv .
 	@if command -v uv >/dev/null 2>&1; then \
 		echo "Using uv for environment management (no venv needed)"; \
+		uv bin/pip install mxdev -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt"; \
 	else \
 		$(PYTHON) -m venv .; \
 		bin/pip install --upgrade pip mxdev -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt"; \
@@ -84,10 +84,10 @@ install-uv: ## Install Plone and develop add-ons using uv
 	fi
 .PHONY: develop
 develop:		## Develop source.ini add-ons using mxdev
-	bin/pip install -r ../requirements.txt -c ../constraints.txt
-	bin/pip install plone.autoinclude==2.0.0
+	uv bin/pip install -r ../requirements.txt -c ../constraints.txt
+	uv bin/pip install plone.autoinclude==2.0.0
 	bin/mxdev -c sources.ini
-	bin/pip install -r requirements-mxdev.txt
+	uv bin/pip install -r requirements-mxdev.txt
 
 .PHONY: status
 status: 		## Check sources for changes
