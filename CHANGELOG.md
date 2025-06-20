@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-27](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-27) - 2025-06-20T23:13:35Z
+
+### Internal
+
+- Added Makefile-ci trying to simplify installation for ci plone instance - [David Ichim -  [`6a428b3`](https://github.com/eea/eea-website-backend/commit/6a428b300c39e83751141834e7fbfb80d0b539e2)]
+- added uv in more places - [David Ichim -  [`5e441dc`](https://github.com/eea/eea-website-backend/commit/5e441dc3ed3a5420e056ad46fcf3722eb0254c06)]
+- use uv pip instead of bin/pip - [David Ichim -  [`a53c96b`](https://github.com/eea/eea-website-backend/commit/a53c96bc4112c91a7fa24507a4fa1c8c55ab7a0b)]
+- use uv pip instead of bin/pip 2 - [David Ichim -  [`941aead`](https://github.com/eea/eea-website-backend/commit/941aeaddf3fbf1dce639480f2c0e3d07a316e460)]
+- use uv venv - [David Ichim -  [`0105998`](https://github.com/eea/eea-website-backend/commit/01059981a6602ee4c8545b50664005557a3dbea3)]
+
 ## [6.0.15-26](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-26) - 2025-06-12T23:13:03Z
 
 ### Dependency updates
