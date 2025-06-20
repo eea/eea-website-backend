@@ -77,7 +77,7 @@ install:		## Install Plone and develop add-ons
 install-uv: ## Install Plone and develop add-ons using uv
 	@if command -v uv >/dev/null 2>&1; then \
  		uv pip install --constraints "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt" Plone plone.volto; \
-		bin/mkwsgiinstance -d . -u admin:admin; \
+		uv run mkwsgiinstance -d . -u admin:admin; \
 		mkdir -p var/blobstorage var/filestorage; \
 	else \
 		echo "uv not found, please install uv or use 'make install'"; \
@@ -86,7 +86,7 @@ install-uv: ## Install Plone and develop add-ons using uv
 develop:		## Develop source.ini add-ons using mxdev
 	uv pip install -r ../requirements.txt -c ../constraints.txt
 	uv pip install plone.autoinclude==2.0.0
-	bin/mxdev -c sources.ini
+	uv run mxdev -c sources.ini
 	uv pip install -r requirements-mxdev.txt
 
 .PHONY: status
@@ -99,9 +99,9 @@ pull:			## Pull sources from git
 
 .PHONY: start
 start:			## Start Plone backend (standalone)
-	bin/runwsgi -v etc/zope.ini config_file=zope.conf
+	uv run runwsgi -v etc/zope.ini config_file=zope.conf
 start-ci:
-	nohup bin/runwsgi -v etc/zope.ini config_file=zope.conf > zope.log 2>&1 &
+	nohup uv run runwsgi -v etc/zope.ini config_file=zope.conf > zope.log 2>&1 &
 
 .PHONY: help
 help:			## Show this help.
