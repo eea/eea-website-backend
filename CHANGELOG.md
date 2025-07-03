@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [6.0.15-28](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-28) - 2025-07-03T23:15:19Z
+
+### Dependency updates
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 1.5 ~ 1.6
+
+* Change: pin kaleido version to 0.2.1
+* Refactor: soer_miniature adapter logic (new step functions, data trimming, axis ranges)
+  [razvanMiu]
+
+
 ## [6.0.15-27](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-27) - 2025-06-20T23:13:35Z
 
 ### Internal
