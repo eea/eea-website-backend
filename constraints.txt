@@ -8,7 +8,7 @@ eea.stringinterp==1.1
 eea.website.policy==4.0
 eea.api.dataconnector==12.0
 eea.api.versions==1.1
-eea.plotly==1.6
+eea.plotly==1.7
 mo-sql-parsing==9.367.23090
 mo-parsing==8.366.23085
 XlsxWriter==3.0.9
