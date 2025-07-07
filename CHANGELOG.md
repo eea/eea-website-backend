@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-29](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-29) - 2025-07-07T23:13:23Z
+
+### Dependency updates
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 1.6 ~ 1.7
+
+* Change: soer_miniature improved logic
+  [razvanMiu]
+
+
 ## [6.0.15-28](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-28) - 2025-07-03T23:15:19Z
 
 ### Dependency updates
