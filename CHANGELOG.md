@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-31](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-31) - 2025-07-25T11:18:48Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 11.1 ~ 12.0
+
+* Bug fix: Fix spacing around figures by adding extra dividers
+  [dobri1408 - refs #289543]
+
+
 ## [6.0.15-30](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-30) - 2025-07-23T23:42:09Z
 
 ### Plone
