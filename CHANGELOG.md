@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-32](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-32) - 2025-07-28T19:54:27Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 12.0 ~ 12.1
+
+* Bug fix: Normalize all divider spacing to M size
+  [avoinea - refs #289543]
+
+
 ## [6.0.15-31](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-31) - 2025-07-25T11:18:48Z
 
 ### Dependency updates
