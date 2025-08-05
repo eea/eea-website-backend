@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [6.0.15-36](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-36) - 2025-08-05T23:47:02Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-14 ~ 6.0.15-15 
+
+##### eeacms/plone-backend:[6.0.15-15](https://github.com/eea/plone-backend/releases/tag/6.0.15-15)
+###### Internal
+
+- the username is not eeacms - [valentinab25 - [`38093a9`](https://github.com/eea/plone-backend/commit/38093a9f5222ec3642c79fb65ebf12e836da7009)]
+
+
 ## [6.0.15-35](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-35) - 2025-08-05T08:46:08Z
 
 ### Plone
