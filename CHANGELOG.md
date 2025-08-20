@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-39](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-39) - 2025-08-20T16:56:27Z
+
+### Dependency updates
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 1.8 ~ 1.9
+
+* Change: Limit delimiters to specific characters
+  [razvanMiu]
+
+
 ## [6.0.15-38](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-38) - 2025-08-20T16:16:53Z
 
 ### Plone
