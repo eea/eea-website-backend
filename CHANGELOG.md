@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [6.0.15-38](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-38) - 2025-08-20T16:16:53Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-16 ~ 6.0.15-17 
+
+##### eeacms/plone-backend:[6.0.15-17](https://github.com/eea/plone-backend/releases/tag/6.0.15-17)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 8.2 ~ 8.3
+
+* Change: Release
+ [dobri1408]
+
+### Dependency updates
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 1.7 ~ 1.8
+
+* Change: fix 'no data provided' soer indicator
+  [razvanMiu]
+
+
 ## [6.0.15-37](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-37) - 2025-08-11T23:45:04Z
 
 ### Plone
