@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [6.0.15-41](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-41) - 2025-08-27T14:57:32Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.0 ~ 12.1
+
+* Change: Add upgrade steps for version 12.x
+  [razvanMiu]
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 1.9 ~ 2.0
+
+* Change: fix csv file data decoding
+  [razvanMiu]
+
+### Internal
+
+- Staging moved to kubernetes, no auto-upgrade for now - [Alin Voinea -  [`5d0680b`](https://github.com/eea/eea-website-backend/commit/5d0680b59ff3778a763d2a1f8203e471866dcd18)]
+
 ## [6.0.15-40](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-40) - 2025-08-20T23:47:47Z
 
 ### Plone
