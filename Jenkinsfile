@@ -6,8 +6,8 @@ pipeline {
     GIT_NAME = "eea-website-backend"
     SONARQUBE_TAG = 'www.eea.europa.eu-en'
     SONARQUBE_TAG_DEMO = 'demo-www.eea.europa.eu'   
-    RANCHER_STACKID = "1st2567"
-    RANCHER_ENVID = "1a140884"
+    RANCHER_STACKID = ""
+    RANCHER_ENVID = ""
     template = "templates/eea-website-backend"
   }
 
