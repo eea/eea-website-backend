@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-42](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-42) - 2025-08-27T23:14:26Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.1 ~ 12.2
+
+* Change: fix csv file data decoding
+  [razvanMiu]
+
+
 ## [6.0.15-41](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-41) - 2025-08-27T14:57:32Z
 
 ### Dependency updates
