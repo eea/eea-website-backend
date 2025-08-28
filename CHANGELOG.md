@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [6.0.15-43](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-43) - 2025-08-28T09:48:16Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.2 ~ 12.3
+
+* Fix: Broken release
+
+
 ## [6.0.15-42](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-42) - 2025-08-27T23:14:26Z
 
 ### Dependency updates
