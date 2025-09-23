@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-44](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-44) - 2025-09-23T07:27:22Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 12.1 ~ 12.2
+
+* Bug fix: Fix dedupe_data to handle also data sources without link
+  [dobri1408 - refs ##292196]
+
+
 ## [6.0.15-43](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-43) - 2025-08-28T09:48:16Z
 
 ### Dependency updates
