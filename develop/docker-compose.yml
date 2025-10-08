@@ -5,7 +5,6 @@ services:
     image: memcached:1.6.10
     ports:
     - "11211:11211"
-    restart: unless-stopped
     command:
     - "-m"
     - "1024"
