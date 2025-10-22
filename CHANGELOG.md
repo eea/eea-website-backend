@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.15-46](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-46) - 2025-10-22T15:15:31Z
+
+### Internal
+
+- skip non-prod tags - [valentinab25 -  [`5cb522b`](https://github.com/eea/eea-website-backend/commit/5cb522b74c5d646511e4e77ec62959f959ca705c)]
+
 ## [6.0.15-45](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-45) - 2025-10-08T17:11:14Z
 
 ### Plone
