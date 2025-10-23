@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [6.0.15-47](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-47) - 2025-10-23T23:59:20Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-19 ~ 6.0.15-20 
+
+##### eeacms/plone-backend:[6.0.15-20](https://github.com/eea/plone-backend/releases/tag/6.0.15-20)
+###### Internal
+
+- fix: security CVE vulnerability on lib2xml - [nileshgulia1 - [`f7b734c`](https://github.com/eea/plone-backend/commit/f7b734c11b574ee0018c26864e4ce5e44001eb89)]
+
+
 ## [6.0.15-46](https://github.com/eea/eea-website-backend/releases/tag/6.0.15-46) - 2025-10-22T15:15:31Z
 
 ### Internal
