@@ -42,7 +42,7 @@ endif
 ##############################################################################
 # SETTINGS AND VARIABLE
 
-PLONE_VERSION=6.0.15
+PLONE_VERSION=6.1.3
 #`docker run -i --rm eeacms/plone-backend env | grep PLONE_VERSION | sed "s/PLONE_VERSION=//g"`
 PYTHON?=python3.11
 
