@@ -25,7 +25,7 @@ pipeline {
           script {
             try {
               checkout scm
-              sh '''docker build -t ${IMAGE_NAME}:${TAG} .'''
+              sh '''docker buildx build --platform linux/amd64,linux/arm64 -t ${IMAGE_NAME}:${TAG} --load .'''
               sh '''./test/run.sh ${IMAGE_NAME}:${TAG}'''
             } finally {
               sh script: "docker rmi ${IMAGE_NAME}:${TAG}", returnStatus: true
