@@ -28,17 +28,6 @@ pipeline {
               
               // Setup Docker Buildx for multi-platform builds
               sh '''
-                # Install docker-buildx CLI plugin if missing
-                if ! docker buildx version >/dev/null 2>&1; then
-                  echo "Installing docker buildx CLI plugin..."
-                  mkdir -p ~/.docker/cli-plugins
-                  curl -fsSL "https://github.com/docker/buildx/releases/latest/download/buildx-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m)" -o ~/.docker/cli-plugins/docker-buildx
-                  chmod +x ~/.docker/cli-plugins/docker-buildx
-                fi
-
-                # Register QEMU binfmt handlers (required to emulate architectures)
-                docker run --rm --privileged tonistiigi/binfmt:latest --install all || true
-
                 # Create and use a builder that supports cross-builds
                 docker buildx create --name multiarch --driver docker-container || true
                 docker buildx use multiarch
@@ -66,17 +55,6 @@ pipeline {
            
            // Setup Docker Buildx for multi-platform builds
            sh '''
-             # Install docker-buildx CLI plugin if missing
-             if ! docker buildx version >/dev/null 2>&1; then
-               echo "Installing docker buildx CLI plugin..."
-               mkdir -p ~/.docker/cli-plugins
-               curl -fsSL "https://github.com/docker/buildx/releases/latest/download/buildx-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m)" -o ~/.docker/cli-plugins/docker-buildx
-               chmod +x ~/.docker/cli-plugins/docker-buildx
-             fi
-
-             # Register QEMU binfmt handlers (required to emulate architectures)
-             docker run --rm --privileged tonistiigi/binfmt:latest --install all || true
-
              # Create and use a builder that supports cross-builds
              docker buildx create --name multiarch --driver docker-container || true
              docker buildx use multiarch
