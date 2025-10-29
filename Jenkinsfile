@@ -25,7 +25,28 @@ pipeline {
           script {
             try {
               checkout scm
-              sh '''docker buildx build --platform linux/amd64,linux/arm64 -t ${IMAGE_NAME}:${TAG} --load .'''
+              
+              // Setup Docker Buildx for multi-platform builds
+              sh '''
+                # Install docker-buildx CLI plugin if missing
+                if ! docker buildx version >/dev/null 2>&1; then
+                  echo "Installing docker buildx CLI plugin..."
+                  mkdir -p ~/.docker/cli-plugins
+                  curl -fsSL "https://github.com/docker/buildx/releases/latest/download/buildx-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m)" -o ~/.docker/cli-plugins/docker-buildx
+                  chmod +x ~/.docker/cli-plugins/docker-buildx
+                fi
+
+                # Register QEMU binfmt handlers (required to emulate architectures)
+                docker run --rm --privileged tonistiigi/binfmt:latest --install all || true
+
+                # Create and use a builder that supports cross-builds
+                docker buildx create --name multiarch --driver docker-container || true
+                docker buildx use multiarch
+                docker buildx inspect --bootstrap
+              '''
+              
+              // Build single-platform for testing (can use --load)
+              sh '''docker buildx build --platform linux/amd64 -t ${IMAGE_NAME}:${TAG} --load .'''
               sh '''./test/run.sh ${IMAGE_NAME}:${TAG}'''
             } finally {
               sh script: "docker rmi ${IMAGE_NAME}:${TAG}", returnStatus: true
@@ -42,6 +63,31 @@ pipeline {
       steps{
         node(label: 'docker') {
           withCredentials([string(credentialsId: 'eea-jenkins-token', variable: 'GITHUB_TOKEN'),  string(credentialsId: 'eea-website-backend-trigger', variable: 'TRIGGER_MAIN_URL'), usernamePassword(credentialsId: 'jekinsdockerhub', usernameVariable: 'DOCKERHUB_USER', passwordVariable: 'DOCKERHUB_PASS')]) {
+           
+           // Setup Docker Buildx for multi-platform builds
+           sh '''
+             # Install docker-buildx CLI plugin if missing
+             if ! docker buildx version >/dev/null 2>&1; then
+               echo "Installing docker buildx CLI plugin..."
+               mkdir -p ~/.docker/cli-plugins
+               curl -fsSL "https://github.com/docker/buildx/releases/latest/download/buildx-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m)" -o ~/.docker/cli-plugins/docker-buildx
+               chmod +x ~/.docker/cli-plugins/docker-buildx
+             fi
+
+             # Register QEMU binfmt handlers (required to emulate architectures)
+             docker run --rm --privileged tonistiigi/binfmt:latest --install all || true
+
+             # Create and use a builder that supports cross-builds
+             docker buildx create --name multiarch --driver docker-container || true
+             docker buildx use multiarch
+             docker buildx inspect --bootstrap
+           '''
+           
+           // Login and build multi-platform image
+           sh '''docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASS'''
+           sh '''docker buildx build --platform linux/amd64,linux/arm64 -t eeacms/eea-website-backend:${BRANCH_NAME} -t eeacms/eea-website-backend:latest --push .'''
+           
+           // Run the existing gitflow process
            sh '''docker pull eeacms/gitflow; docker run -i --rm --name="$BUILD_TAG"  -e GIT_BRANCH="$BRANCH_NAME" -e GIT_NAME="$GIT_NAME" -e DOCKERHUB_REPO="eeacms/eea-website-backend" -e GIT_TOKEN="$GITHUB_TOKEN" -e DOCKERHUB_USER="$DOCKERHUB_USER" -e DOCKERHUB_PASS="$DOCKERHUB_PASS"  -e TRIGGER_MAIN_URL="$TRIGGER_MAIN_URL" -e DEPENDENT_DOCKERFILE_URL="" -e GITFLOW_BEHAVIOR="RUN_ON_TAG" eeacms/gitflow'''
          }
 
