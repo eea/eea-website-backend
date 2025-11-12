@@ -12,7 +12,7 @@ services:
     - "500m"
 
   postgres:
-    image: eeacms/postgres:14.7-1.0
+    image: eeacms/postgres:17.5-1
     ports:
     - "5432:5432"
     environment:
