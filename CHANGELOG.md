@@ -1,6 +1,37 @@
 # Changelog
 
 
+## [6.1.3-3](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-3) - 2025-11-17T13:22:41Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-2 ~ 6.1.3-3 
+
+##### eeacms/plone-backend:[6.1.3-3](https://github.com/eea/plone-backend/releases/tag/6.1.3-3)
+###### Dependency updates
+
+###### [eea.api.controlpanel](https://github.com/eea/eea.api.controlpanel/releases): 1.1 ~ 1.2
+
+* Change: Replace Python linting to ruff
+ [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+ [mihaidobrescu1111 = refs #293593]
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.3 ~ 12.4
+
+* Change: Replace Python linting to ruff
+  [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+  [mihaidobrescu1111 = refs #293593]
+
+### Internal
+
+- fix: plone.volto version - refs #288125 - [Calin Vlad -  [`7c56294`](https://github.com/eea/eea-website-backend/commit/7c562941c291fb4e5b25bb0034553158120a397e)]
+- Cleanup - [Alin Voinea -  [`ea8504c`](https://github.com/eea/eea-website-backend/commit/ea8504c560290ac3352bbd496f1e06e136ac9919)]
+- Release eeacms/plone-backend:6.1.3-3 - [Calin Vlad -  [`9984048`](https://github.com/eea/eea-website-backend/commit/9984048f05a740981edc4aef513e41cda4f0115d)]
+
 ## [6.1.3-2](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-2) - 2025-11-13T00:20:48Z
 
 ### Internal
