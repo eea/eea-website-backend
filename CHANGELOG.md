@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [6.1.3-2](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-2) - 2025-11-13T00:20:48Z
+
+### Internal
+
+- chore: Update dev environment PostgreSQL to 17.5 - [Alin Voinea -  [`dfed289`](https://github.com/eea/eea-website-backend/commit/dfed289d4a55dc1d5f4b4e1462f9b38bff345db5)]
+- Upgrade python to 3.12 - [Alin Voinea -  [`82636bb`](https://github.com/eea/eea-website-backend/commit/82636bba8ce8bcd329ae0057fe160f93ba8007bc)]
+
 ## [6.1.3-1](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-1) - 2025-10-29T00:54:27Z
 
 ### Plone
