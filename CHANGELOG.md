@@ -1,6 +1,126 @@
 # Changelog
 
 
+## [6.1.3-4](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-4) - 2025-11-18T16:40:48Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-3 ~ 6.1.3-4 
+
+##### eeacms/plone-backend:[6.1.3-4](https://github.com/eea/plone-backend/releases/tag/6.1.3-4)
+###### Dependency updates
+
+###### [eea.api.controlpanel](https://github.com/eea/eea.api.controlpanel/releases): 1.2 ~ 1.3
+
+* Change: Release
+ [avoinea]
+
+###### [eea.api.glossary](https://pypi.org/project/eea.api.glossary/#changelog): 1.5 ~ 1.6
+
+###### [eea.api.layout](https://github.com/eea/eea.api.layout/releases): 3.2 ~ 3.3
+
+* Change: Replace Python linting to ruff
+ [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+ [mihaidobrescu1111 = refs #293593]
+
+###### [eea.banner](https://github.com/eea/eea.banner/releases): 1.4 ~ 1.5
+
+* Change: Replace Python linting to ruff
+ [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+ [mihaidobrescu1111 = refs #293593]
+
+###### [eea.geolocation](https://github.com/eea/eea.geolocation/releases): 2.6 ~ 2.7
+
+* Change: Replace Python linting to ruff
+ [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+ [mihaidobrescu1111 = refs #293593]
+
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 8.2 ~ 8.3
+
+* Change: Replace Python linting to ruff
+ [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+ [mihaidobrescu1111 = refs #293593]
+
+###### [eea.schema.slate](https://github.com/eea/eea.schema.slate/releases): 1.2 ~ 1.3
+
+* Change: Replace Python linting to ruff
+ [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+ [mihaidobrescu1111 = refs #293593]
+
+###### [eea.sentry](https://github.com/eea/eea.sentry/releases): 3.0 ~ 3.1
+
+* Change: Replace Python linting to ruff
+ [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+ [mihaidobrescu1111 = refs #293593]
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 9.1 ~ 9.2
+
+* Change: Replace Python linting to ruff
+ [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+ [mihaidobrescu1111 = refs #293593]
+
+###### [eea.zotero](https://github.com/eea/eea.zotero/releases): 1.4 ~ 1.5
+
+* Change: Replace Python linting to ruff
+ [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+ [mihaidobrescu1111 = refs #293593]
+
+###### Internal
+
+- fix: Plone upgrades steps from 6.0.15 to 6.1.3 - refs #288125 - [Alin Voinea - [`33ab97d`](https://github.com/eea/plone-backend/commit/33ab97d0ea7aa73347273e1f512e488efb27db37)]
+
+### Dependency updates
+
+##### [eea.api.versions](https://github.com/eea/eea.api.versions/releases): 1.1 ~ 1.2
+
+* Change: Replace Python linting to ruff
+  [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+  [mihaidobrescu1111 = refs #293593]
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 12.2 ~ 12.3
+
+* Change: Replace Python linting to ruff
+  [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+  [mihaidobrescu1111 = refs #293593]
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 2.0 ~ 2.1
+
+* Change: Replace Python linting to ruff
+  [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+  [mihaidobrescu1111 = refs #293593]
+
+##### [eea.progress.editing](https://github.com/eea/eea.progress.editing/releases): 2.0 ~ 2.1
+
+* Change: Replace Python linting to ruff
+  [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+  [mihaidobrescu1111 = refs #293593]
+
+##### [eea.stringinterp](https://github.com/eea/eea.stringinterp/releases): 1.1 ~ 1.2
+
+* Change: Replace Python linting to ruff
+  [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+  [mihaidobrescu1111 = refs #293593]
+
+### Internal
+
+- .gitignore - [Alin Voinea -  [`96083a2`](https://github.com/eea/eea-website-backend/commit/96083a23809625aed5155ba4840848469196116a)]
+- chore: Add possibility to connect to alpha PostgreSQL in dev environment - [Alin Voinea -  [`2d5ff83`](https://github.com/eea/eea-website-backend/commit/2d5ff83e09a42dba2330f6eccecba6bca4081b9f)]
+- chore: Add pas.plugins.eea to development environment - [Alin Voinea -  [`a4c2c04`](https://github.com/eea/eea-website-backend/commit/a4c2c044bce8abe826eae51117837ac4d5bcc1b7)]
+- chore: Add eea.api.glossary to dev environment - [Alin Voinea -  [`9bc2323`](https://github.com/eea/eea-website-backend/commit/9bc232328459b4349da7ba3b5fef1c91e34158ff)]
+
 ## [6.1.3-3](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-3) - 2025-11-17T13:22:41Z
 
 ### Plone
