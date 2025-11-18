@@ -57,13 +57,14 @@ clean:			## Cleanup environment
 .PHONY: bootstrap
 bootstrap:		## Bootstrap python environment
 	$(PYTHON) -m venv .
-	bin/pip install --upgrade pip mxdev plonecli pylint black ruff -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt"
+	curl -O plone-constraints.txt https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt
+	bin/pip install --upgrade pip mxdev plonecli pylint black ruff -c plone-constraints.txt
 
 .PHONY: install
 install:		## Install Plone and develop add-ons
-	bin/pip install Plone plone.volto -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt"
-	bin/pip install zope.testrunner plone.app.testing plone.reload dm.plonepatches.reload collective.exportimport -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt"
-	bin/pip install relstorage==4.0.0 psycopg2==2.9.5 python-ldap==3.4.3 pas.plugins.ldap==1.8.2 -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt"
+	bin/pip install Plone plone.volto -c plone-constraints.txt
+	bin/pip install zope.testrunner plone.app.testing plone.reload dm.plonepatches.reload collective.exportimport -c plone-constraints.txt
+	bin/pip install relstorage==4.0.0 psycopg2==2.9.5 python-ldap==3.4.3 pas.plugins.ldap==1.8.2 -c plone-constraints.txt
 	bin/mkwsgiinstance -d . -u admin:admin
 	mkdir -p var/blobstorage var/filestorage
 
@@ -90,6 +91,10 @@ start:			## Start Plone backend (standalone)
 relstorage:		## Start Plone backend (RelStorage/PostgreSQL)
 	docker compose up -d
 	bin/runwsgi -v etc/zope.ini config_file=relstorage.conf
+
+.PHONY: alpha
+alpha:		## Start Plone backend (RelStorage/PostgreSQL with alpha features)
+	bin/runwsgi -v etc/zope.ini config_file=alpha.conf
 
 .PHONY: release
 release:		## See release candidates
