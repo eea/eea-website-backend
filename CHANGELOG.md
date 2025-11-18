@@ -1,6 +1,41 @@
 # Changelog
 
 
+## [6.1.3-5](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-5) - 2025-11-18T18:08:49Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-4 ~ 6.1.3-5 
+
+##### eeacms/plone-backend:[6.1.3-5](https://github.com/eea/plone-backend/releases/tag/6.1.3-5)
+###### Dependency updates
+
+###### [collective.exportimport](https://pypi.org/project/collective.exportimport/#changelog): 1.12 ~ 1.15
+
+###### [pas.plugins.authomatic](https://pypi.org/project/pas.plugins.authomatic/#changelog): 2.0.0rc3 ~ 2.0.0
+
+###### [pas.plugins.ldap](https://pypi.org/project/pas.plugins.ldap/#changelog): 1.8.3 ~ 1.8.4
+
+###### [python-ldap](https://pypi.org/project/python-ldap/#changelog): 3.4.4 ~ 3.4.5
+
+###### [sentry.sdk](https://pypi.org/project/sentry.sdk/#changelog): 2.42.1 ~ 2.45.0
+
+###### Downgrades 
+
+###### [ijson](https://pypi.org/project/ijson/#changelog): 3.4.0 ~ 3.4.0.post0
+
+###### Removed packages
+
+###### [PyYAML](https://pypi.org/project/PyYAML/#changelog): 6.0.2
+
+###### [z3c.jbot](https://pypi.org/project/z3c.jbot/#changelog): 3.1
+
+###### Internal
+
+- Upgrade packages pins to the latest minor release - [Alin Voinea - [`515577d`](https://github.com/eea/plone-backend/commit/515577d355a2250e58d8f7765a9155106aad6c8b)]
+- fix: Remove duplicate package pins - [Alin Voinea - [`24ea3ac`](https://github.com/eea/plone-backend/commit/24ea3acd606241cbc509278248ff2304f911adf0)]
+
+
 ## [6.1.3-4](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-4) - 2025-11-18T16:40:48Z
 
 ### Plone
