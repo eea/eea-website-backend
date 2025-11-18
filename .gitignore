@@ -10,4 +10,5 @@ requirements-mxdev.txt
 share/
 sources/
 var/
+*.bak
 *~
