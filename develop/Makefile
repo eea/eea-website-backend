@@ -57,7 +57,7 @@ clean:			## Cleanup environment
 .PHONY: bootstrap
 bootstrap:		## Bootstrap python environment
 	$(PYTHON) -m venv .
-	curl -O plone-constraints.txt https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt
+	curl -o plone-constraints.txt https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt
 	bin/pip install --upgrade pip mxdev plonecli pylint black ruff -c plone-constraints.txt
 
 .PHONY: install
