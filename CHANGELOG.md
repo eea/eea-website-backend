@@ -1,6 +1,49 @@
 # Changelog
 
 
+## [6.1.3-6](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-6) - 2025-11-19T16:16:40Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-5 ~ 6.1.3-6 
+
+##### eeacms/plone-backend:[6.1.3-6](https://github.com/eea/plone-backend/releases/tag/6.1.3-6)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 9.2 ~ 9.3
+
+* Fix: migration script to handle missing catalog entries for images
+ [ichim-david refs #254622]
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.5 ~ 1.6
+
+###### Internal
+
+- test: updated tests for 6.1.3 - refs #288125 - [Calin Vlad - [`e9884de`](https://github.com/eea/plone-backend/commit/e9884dec97f6ec1175052ca460927b0d01bff824)]
+
+### Dependency updates
+
+##### [eea.progress.workflow](https://github.com/eea/eea.progress.workflow/releases): 3.0 ~ 3.1
+
+* Change: Replace Python linting to ruff
+  [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+  [mihaidobrescu1111 = refs #293593]
+
+##### [eea.website.policy](https://github.com/eea/eea.website.policy/releases): 4.0 ~ 4.1
+
+* Change: Replace Python linting to ruff
+  [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+  [mihaidobrescu1111 = refs #293593]
+
+### Internal
+
+- chore: Cleanup dev environment - [Alin Voinea -  [`73edf1d`](https://github.com/eea/eea-website-backend/commit/73edf1d331688cb5336c97768ef05a225e35a772)]
+- chore: Fix curl plone-contraints.txt in dev environment - [Alin Voinea -  [`6d4720a`](https://github.com/eea/eea-website-backend/commit/6d4720a935c03640fce162647c99a09f8f366dcf)]
+- chore: Fix dev environment python packages versions - [Alin Voinea -  [`f07aaa5`](https://github.com/eea/eea-website-backend/commit/f07aaa53b4158a41a198ed49c99fac07a4742d00)]
+- test: update tests for 6.1.3 - refs #288125 - [Calin Vlad -  [`539216f`](https://github.com/eea/eea-website-backend/commit/539216f8bd44b972eefebdfb94895a2f02a72bb9)]
+
 ## [6.1.3-5](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-5) - 2025-11-18T18:08:49Z
 
 ### Plone
