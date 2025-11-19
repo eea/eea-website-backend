@@ -64,14 +64,14 @@ bootstrap:		## Bootstrap python environment
 install:		## Install Plone and develop add-ons
 	bin/pip install Plone plone.volto -c plone-constraints.txt
 	bin/pip install zope.testrunner plone.app.testing plone.reload dm.plonepatches.reload collective.exportimport -c plone-constraints.txt
-	bin/pip install relstorage==4.0.0 psycopg2==2.9.5 python-ldap==3.4.3 pas.plugins.ldap==1.8.2 -c plone-constraints.txt
+	bin/pip install relstorage==4.1.1 psycopg2==2.9.10 python-ldap==3.4.5 pas.plugins.ldap==1.8.4 -c plone-constraints.txt
 	bin/mkwsgiinstance -d . -u admin:admin
 	mkdir -p var/blobstorage var/filestorage
 
 .PHONY: develop
 develop:		## Develop source.ini add-ons using mxdev
 	bin/pip install -r ../requirements.txt -c ../constraints.txt
-	bin/pip install plone.autoinclude==2.0.0
+	bin/pip install plone.autoinclude -c plone-constraints.txt
 	bin/mxdev -c sources.ini
 	bin/pip install -r requirements-mxdev.txt
 
