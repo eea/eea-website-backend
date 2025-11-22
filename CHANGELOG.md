@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [6.1.3-7](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-7) - 2025-11-22T00:18:40Z
+
+### Dependency updates
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 2.1 ~ 2.2
+
+* Change: better handle of backward compatibility, ref #293767
+  [razvanMiu]
+
+### Internal
+
+- chore: Fix local dev plone.app.upgrade version - [Alin Voinea -  [`a57ee8b`](https://github.com/eea/eea-website-backend/commit/a57ee8bd835f92274f358d0c52f8e92c6a5d6a02)]
+- Add eea.redis.redirector to dev environment - [Alin Voinea -  [`0fc5218`](https://github.com/eea/eea-website-backend/commit/0fc52187a7a744848aade18d593368a66fada93c)]
+- chore: Add redis to dev environment - [Alin Voinea -  [`f1ed2d1`](https://github.com/eea/eea-website-backend/commit/f1ed2d1b068d92ed7df524c690bca0da7ac07e70)]
+- chore: Rename redis redirector to eea.api.redirector - [Alin Voinea -  [`c798481`](https://github.com/eea/eea-website-backend/commit/c7984819c1d1d9b202617b85224ca4629b5253ae)]
+
 ## [6.1.3-6](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-6) - 2025-11-19T16:16:40Z
 
 ### Plone
