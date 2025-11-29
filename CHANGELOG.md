@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.1.3-8](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-8) - 2025-11-29T00:18:37Z
+
+### Internal
+
+- chore: Add script to dev environment to cleanup CMFEditions versions - [Alin Voinea -  [`04af5a3`](https://github.com/eea/eea-website-backend/commit/04af5a38d3f0576d63a683119e3c42d1d01a7cb6)]
+
 ## [6.1.3-7](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-7) - 2025-11-22T00:18:40Z
 
 ### Dependency updates
