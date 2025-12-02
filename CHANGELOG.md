@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [6.1.3-9](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-9) - 2025-12-02T08:49:02Z
+
+### Dependency updates
+
+#### New packages
+
+##### [eea.api.redirector](https://pypi.org/project/eea.api.redirector/#changelog): 0.1
+
+### Internal
+
+- Add eea.api.redirector - [Alin Voinea -  [`40dddce`](https://github.com/eea/eea-website-backend/commit/40dddce1fef038b2b652932a5e35fce03378f52a)]
+
 ## [6.1.3-8](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-8) - 2025-11-29T00:18:37Z
 
 ### Internal
