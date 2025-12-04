@@ -1,6 +1,59 @@
 # Changelog
 
 
+## [6.1.3-10](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-10) - 2025-12-04T18:50:11Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-6 ~ 6.1.3-7 
+
+##### eeacms/plone-backend:[6.1.3-7](https://github.com/eea/plone-backend/releases/tag/6.1.3-7)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 9.3 ~ 10.0
+
+###### What's Changed
+* Advanced restricted block by @tedw87 in https://github.com/eea/eea.volto.policy/pull/88
+* Release 10.0 by @avoinea in https://github.com/eea/eea.volto.policy/pull/89
+
+
+**Full Changelog**: https://github.com/eea/eea.volto.policy/compare/9.3...10.0
+
+###### Internal
+
+- Release eea.volto.policy 10.0 - [Alin Voinea - [`505df34`](https://github.com/eea/plone-backend/commit/505df34459a3c50cf98ad63cdc4a6abe6f6c9c70)]
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 12.3 ~ 12.4
+
+###### What's Changed
+* Make dedupe_data to handle data sources without link by @dobri1408 in https://github.com/eea/eea.dexterity.indicators/pull/61
+* Release by @avoinea in https://github.com/eea/eea.dexterity.indicators/pull/62
+* Ruff by @mihaidobrescu1111 in https://github.com/eea/eea.dexterity.indicators/pull/63
+* Release by @avoinea in https://github.com/eea/eea.dexterity.indicators/pull/64
+* feat(contentRules): Add cr to publish Indicator contents, ref #294770 by @razvanMiu in https://github.com/eea/eea.dexterity.indicators/pull/65
+
+###### New Contributors
+* @mihaidobrescu1111 made their first contribution in https://github.com/eea/eea.dexterity.indicators/pull/63
+* @razvanMiu made their first contribution in https://github.com/eea/eea.dexterity.indicators/pull/65
+
+**Full Changelog**: https://github.com/eea/eea.dexterity.indicators/compare/12.1...12.4
+
+##### [eea.website.policy](https://github.com/eea/eea.website.policy/releases): 4.1 ~ 4.2
+
+###### What's Changed
+* Fix jenkinsfile to use token by @valentinab25 in https://github.com/eea/eea.website.policy/pull/15
+
+###### New Contributors
+* @valentinab25 made their first contribution in https://github.com/eea/eea.website.policy/pull/15
+
+**Full Changelog**: https://github.com/eea/eea.website.policy/compare/4.1...4.2
+
+### Internal
+
+- Release eea.website.policy 4.2, eea.dexterity.indicators 12.4 - [Alin Voinea -  [`99f6aab`](https://github.com/eea/eea-website-backend/commit/99f6aab3aa9d42b7e01e7ed6cc52234b02f42474)]
+
 ## [6.1.3-9](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-9) - 2025-12-02T08:49:02Z
 
 ### Dependency updates
