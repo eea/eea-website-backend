@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [6.1.3-11](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-11) - 2025-12-13T00:18:17Z
+
+### Dependency updates
+
+##### [eea.dexterity.themes](https://github.com/eea/eea.dexterity.themes/releases): 1.4 ~ 1.5
+
+* Change: Replace Python linting to ruff
+  [mihaidobrescu1111 = refs #286821]
+* Change: Add plone6 tests
+  [mihaidobrescu1111 = refs #293593]
+
+
 ## [6.1.3-10](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-10) - 2025-12-04T18:50:11Z
 
 ### Plone
