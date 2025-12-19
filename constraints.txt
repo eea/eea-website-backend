@@ -7,7 +7,7 @@ eea.progress.workflow==3.1
 eea.stringinterp==1.2
 eea.website.policy==4.2
 eea.api.dataconnector==12.4
-eea.api.redirector==0.1
+eea.api.redirector==0.2
 eea.api.versions==1.2
 eea.plotly==2.2
 mo-sql-parsing==9.367.23090
