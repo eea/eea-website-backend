@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [6.1.3-12](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-12) - 2025-12-20T00:18:19Z
+
+### Dependency updates
+
+##### [eea.api.redirector](https://pypi.org/project/eea.api.redirector/#changelog): 0.1 ~ 0.2
+
+
 ## [6.1.3-11](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-11) - 2025-12-13T00:18:17Z
 
 ### Dependency updates
