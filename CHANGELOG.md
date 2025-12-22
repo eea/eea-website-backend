@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [6.1.3-13](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-13) - 2025-12-22T10:15:29Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-7 ~ 6.1.3-9 
+
+##### eeacms/plone-backend:[6.1.3-9](https://github.com/eea/plone-backend/releases/tag/6.1.3-9)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 11.0 ~ 11.1
+
+* Fix: Handle NoInteraction during inherited field lookup in indexing
+ [avoinea - refs #295495]
+##### eeacms/plone-backend:[6.1.3-8](https://github.com/eea/plone-backend/releases/tag/6.1.3-8)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 10.0 ~ 11.0
+
+* Feature: Inheritable fields, for example inherit preview_image from parent if context doesn't have a preview_image
+ [razvanMiu - refs #295495]
+
+
 ## [6.1.3-12](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-12) - 2025-12-20T00:18:19Z
 
 ### Dependency updates
