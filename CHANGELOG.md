@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.1.3-14](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-14) - 2025-12-23T00:54:33Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-9 ~ 6.1.3-10 
+
+##### eeacms/plone-backend:[6.1.3-10](https://github.com/eea/plone-backend/releases/tag/6.1.3-10)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 11.1 ~ 11.2
+
+* Fix: Index image scales with relative_path to context
+ [avoinea - refs #295495]
+
+
 ## [6.1.3-13](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-13) - 2025-12-22T10:15:29Z
 
 ### Plone
