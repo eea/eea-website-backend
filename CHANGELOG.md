@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.1.3-15](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-15) - 2025-12-24T00:19:59Z
+
+### Internal
+
+- chore: Add import_to_redis script - [Alin Voinea -  [`7576d96`](https://github.com/eea/eea-website-backend/commit/7576d9616e65c231ba38efa86ae6bc45c2f1500f)]
+
 ## [6.1.3-14](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-14) - 2025-12-23T00:54:33Z
 
 ### Plone
