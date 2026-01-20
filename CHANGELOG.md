@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [6.1.3-17](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-17) - 2026-01-20T18:59:35Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 14.0 ~ 14.1
+
+* Bug fix: Fix version linking sort order - drafts are newest (work in progress),
+  not oldest. Correct order: archived < published < drafts
+  [avoinea - refs #289335]
+
+
 ## [6.1.3-16](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-16) - 2026-01-20T14:26:26Z
 
 ### Dependency updates
