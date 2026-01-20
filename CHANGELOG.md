@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [6.1.3-16](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-16) - 2026-01-20T14:26:26Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 12.4 ~ 14.0
+
+* Feature: Upgrade step to link indicator versions by populating
+  copied_from and copied_to fields based on naming conventions
+  [avoinea - refs #289335]
+
+* Feature: Add archived state to indicators
+  [dobri1408 - refs #289335]
+
+
 ## [6.1.3-15](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-15) - 2025-12-24T00:19:59Z
 
 ### Internal
