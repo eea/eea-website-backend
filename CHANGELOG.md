@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [6.1.3-18](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-18) - 2026-01-21T12:48:39Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 14.1 ~ 15.0
+
+* Refactor: Rename workflow transition from 'archived' to 'archive' to follow
+  Plone naming conventions (verb form for transitions, past tense for states)
+  [avoinea - refs #289335]
+
+
 ## [6.1.3-17](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-17) - 2026-01-20T18:59:35Z
 
 ### Dependency updates
