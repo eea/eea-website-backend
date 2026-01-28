@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.1.3-19](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-19) - 2026-01-28T00:20:05Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.4 ~ 12.5
+
+* Change: Release
+  [laszlocseh]
+
+
 ## [6.1.3-18](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-18) - 2026-01-21T12:48:39Z
 
 ### Dependency updates
