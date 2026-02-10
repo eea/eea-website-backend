@@ -2,7 +2,7 @@
 collective.volto.subsites==1.4.0
 eea.dexterity.indicators==15.1
 eea.dexterity.themes==1.5
-eea.progress.editing==2.1
+eea.progress.editing==3.0
 eea.progress.workflow==3.1
 eea.stringinterp==1.2
 eea.website.policy==4.2
