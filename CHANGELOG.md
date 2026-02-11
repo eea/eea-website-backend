@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.1.3-22](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-22) - 2026-02-11T00:21:11Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 15.0 ~ 15.1
+
+* Feature: Add maxCharsOverflowPercent to Indicator's fixed layout
+  [dobri1408 - refs #294806]
+
+##### [eea.progress.editing](https://github.com/eea/eea.progress.editing/releases): 2.1 ~ 3.0
+
+* Feature: Add support to enforce character limits in Section (Group) blocks
+  [dobri1408 - refs #294806]
+
+
 ## [6.1.3-21](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-21) - 2026-02-06T01:01:44Z
 
 ### Plone
