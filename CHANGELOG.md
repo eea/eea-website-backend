@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [6.1.3-23](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-23) - 2026-02-25T01:05:22Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-12 ~ 6.1.3-13 
+
+##### eeacms/plone-backend:[6.1.3-13](https://github.com/eea/plone-backend/releases/tag/6.1.3-13)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 5.3 ~ 5.4
+
+* Bug fix: Lang support for taxonomies
+ [dobri1408 - refs #282886]
+
+
 ## [6.1.3-22](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-22) - 2026-02-11T00:21:11Z
 
 ### Dependency updates
