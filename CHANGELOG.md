@@ -1,6 +1,25 @@
 # Changelog
 
 
+## [6.1.3-25](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-25) - 2026-03-07T01:10:17Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-14 ~ 6.1.3-15 
+
+##### eeacms/plone-backend:[6.1.3-15](https://github.com/eea/plone-backend/releases/tag/6.1.3-15)
+###### Dependency updates
+
+###### [collective.taxonomy](https://pypi.org/project/collective.taxonomy/#changelog): 3.1.7 ~ 3.1.8dev1
+
+###### Internal
+
+- Patch release collective.taxonomy 3.1.8dev1 - refs #285635 - [Alin Voinea - [`4b2a920`](https://github.com/eea/plone-backend/commit/4b2a9206481b84bf70fed0b9c830ce63ad35b78d)]
+
+### Internal
+
+- chore: Are collective.taxonomy to dev environment - [Alin Voinea -  [`380aa66`](https://github.com/eea/eea-website-backend/commit/380aa661bef139970fea972915ee3c48a8d534ca)]
+
 ## [6.1.3-24](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-24) - 2026-03-05T01:19:50Z
 
 ### Plone
