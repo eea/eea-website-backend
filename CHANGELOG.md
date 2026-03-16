@@ -1,6 +1,196 @@
 # Changelog
 
 
+## [6.1.3-25](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-25) - 2026-03-07T01:10:17Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-14 ~ 6.1.3-15 
+
+##### eeacms/plone-backend:[6.1.3-15](https://github.com/eea/plone-backend/releases/tag/6.1.3-15)
+###### Dependency updates
+
+###### [collective.taxonomy](https://pypi.org/project/collective.taxonomy/#changelog): 3.1.7 ~ 3.1.8dev1
+
+###### Internal
+
+- Patch release collective.taxonomy 3.1.8dev1 - refs #285635 - [Alin Voinea - [`4b2a920`](https://github.com/eea/plone-backend/commit/4b2a9206481b84bf70fed0b9c830ce63ad35b78d)]
+
+### Internal
+
+- chore: Are collective.taxonomy to dev environment - [Alin Voinea -  [`380aa66`](https://github.com/eea/eea-website-backend/commit/380aa661bef139970fea972915ee3c48a8d534ca)]
+
+## [6.1.3-24](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-24) - 2026-03-05T01:19:50Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-13 ~ 6.1.3-14 
+
+##### eeacms/plone-backend:[6.1.3-14](https://github.com/eea/plone-backend/releases/tag/6.1.3-14)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 11.2 ~ 11.3
+
+* Fix: Override titles on cards when target is selected
+ [tedw87 - refs #298262]
+
+
+## [6.1.3-23](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-23) - 2026-02-25T01:05:22Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-12 ~ 6.1.3-13 
+
+##### eeacms/plone-backend:[6.1.3-13](https://github.com/eea/plone-backend/releases/tag/6.1.3-13)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 5.3 ~ 5.4
+
+* Bug fix: Lang support for taxonomies
+ [dobri1408 - refs #282886]
+
+
+## [6.1.3-22](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-22) - 2026-02-11T00:21:11Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 15.0 ~ 15.1
+
+* Feature: Add maxCharsOverflowPercent to Indicator's fixed layout
+  [dobri1408 - refs #294806]
+
+##### [eea.progress.editing](https://github.com/eea/eea.progress.editing/releases): 2.1 ~ 3.0
+
+* Feature: Add support to enforce character limits in Section (Group) blocks
+  [dobri1408 - refs #294806]
+
+
+## [6.1.3-21](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-21) - 2026-02-06T01:01:44Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-11 ~ 6.1.3-12 
+
+##### eeacms/plone-backend:[6.1.3-12](https://github.com/eea/plone-backend/releases/tag/6.1.3-12)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.5 ~ 1.7
+
+
+## [6.1.3-20](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-20) - 2026-01-28T13:47:41Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-10 ~ 6.1.3-11 
+
+##### eeacms/plone-backend:[6.1.3-11](https://github.com/eea/plone-backend/releases/tag/6.1.3-11)
+###### Dependency updates
+
+###### Downgrades 
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.6 ~ 1.5
+
+###### Internal
+
+- Revert pas.plugins.eea to previous version - [Teodor - [`c6f89e2`](https://github.com/eea/plone-backend/commit/c6f89e2c0e0e8e71cf5250791c38f84f3cf54a6a)]
+
+
+## [6.1.3-19](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-19) - 2026-01-28T00:20:05Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.4 ~ 12.5
+
+* Change: Release
+  [laszlocseh]
+
+
+## [6.1.3-18](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-18) - 2026-01-21T12:48:39Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 14.1 ~ 15.0
+
+* Refactor: Rename workflow transition from 'archived' to 'archive' to follow
+  Plone naming conventions (verb form for transitions, past tense for states)
+  [avoinea - refs #289335]
+
+
+## [6.1.3-17](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-17) - 2026-01-20T18:59:35Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 14.0 ~ 14.1
+
+* Bug fix: Fix version linking sort order - drafts are newest (work in progress),
+  not oldest. Correct order: archived < published < drafts
+  [avoinea - refs #289335]
+
+
+## [6.1.3-16](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-16) - 2026-01-20T14:26:26Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 12.4 ~ 14.0
+
+* Feature: Upgrade step to link indicator versions by populating
+  copied_from and copied_to fields based on naming conventions
+  [avoinea - refs #289335]
+
+* Feature: Add archived state to indicators
+  [dobri1408 - refs #289335]
+
+
+## [6.1.3-15](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-15) - 2025-12-24T00:19:59Z
+
+### Internal
+
+- chore: Add import_to_redis script - [Alin Voinea -  [`7576d96`](https://github.com/eea/eea-website-backend/commit/7576d9616e65c231ba38efa86ae6bc45c2f1500f)]
+
+## [6.1.3-14](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-14) - 2025-12-23T00:54:33Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-9 ~ 6.1.3-10 
+
+##### eeacms/plone-backend:[6.1.3-10](https://github.com/eea/plone-backend/releases/tag/6.1.3-10)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 11.1 ~ 11.2
+
+* Fix: Index image scales with relative_path to context
+ [avoinea - refs #295495]
+
+
+## [6.1.3-13](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-13) - 2025-12-22T10:15:29Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-7 ~ 6.1.3-9 
+
+##### eeacms/plone-backend:[6.1.3-9](https://github.com/eea/plone-backend/releases/tag/6.1.3-9)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 11.0 ~ 11.1
+
+* Fix: Handle NoInteraction during inherited field lookup in indexing
+ [avoinea - refs #295495]
+##### eeacms/plone-backend:[6.1.3-8](https://github.com/eea/plone-backend/releases/tag/6.1.3-8)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 10.0 ~ 11.0
+
+* Feature: Inheritable fields, for example inherit preview_image from parent if context doesn't have a preview_image
+ [razvanMiu - refs #295495]
+
+
+## [6.1.3-12](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-12) - 2025-12-20T00:18:19Z
+
+### Dependency updates
+
+##### [eea.api.redirector](https://pypi.org/project/eea.api.redirector/#changelog): 0.1 ~ 0.2
+
+
 ## [6.1.3-11](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-11) - 2025-12-13T00:18:17Z
 
 ### Dependency updates
