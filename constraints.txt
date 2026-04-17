@@ -9,6 +9,7 @@ eea.website.policy==4.2
 eea.api.dataconnector==12.5
 eea.api.redirector==0.2
 eea.api.versions==1.2
+eea.volto.policy=12.2
 mo-sql-parsing==9.367.23090
 mo-parsing==8.366.23085
 XlsxWriter==3.0.9
