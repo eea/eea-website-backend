@@ -1,6 +1,130 @@
 # Changelog
 
 
+## [6.1.3-30](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-30) - 2026-04-18T00:19:06Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-19 ~ 6.1.3-20 
+
+##### eeacms/plone-backend:[6.1.3-20](https://github.com/eea/plone-backend/releases/tag/6.1.3-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.1 ~ 12.2
+
+* Change: update default registry
+ [razvanMiu]
+
+
+## [6.1.3-29](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-29) - 2026-04-17T00:17:07Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-18 ~ 6.1.3-19 
+
+##### eeacms/plone-backend:[6.1.3-19](https://github.com/eea/plone-backend/releases/tag/6.1.3-19)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.0 ~ 12.1
+
+* Change: Change header defaults
+ [razvanMiu]
+
+
+## [6.1.3-28](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-28) - 2026-04-16T00:20:38Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-17 ~ 6.1.3-18 
+
+##### eeacms/plone-backend:[6.1.3-18](https://github.com/eea/plone-backend/releases/tag/6.1.3-18)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 5.4 ~ 5.5
+
+* Change: Add unit tests for seq_strip and tuplize functions
+ [avoinea]
+
+
+## [6.1.3-27](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-27) - 2026-04-15T00:20:56Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-16 ~ 6.1.3-17 
+
+##### eeacms/plone-backend:[6.1.3-17](https://github.com/eea/plone-backend/releases/tag/6.1.3-17)
+###### Dependency updates
+
+###### [eea.api.layout](https://github.com/eea/eea.api.layout/releases): 3.3 ~ 3.4
+
+* Change: Add unit tests for serializer blocks logic
+ [avoinea]
+
+###### [eea.banner](https://github.com/eea/eea.banner/releases): 1.5 ~ 1.7
+
+* Change: Add unit tests for isTrue function
+ [avoinea]
+
+* Change: Add unit tests for isTrue function
+ [avoinea]
+
+###### [eea.geolocation](https://github.com/eea/eea.geolocation/releases): 2.7 ~ 2.8
+
+* Change: feat: Add integration tests for @geolocation REST API views
+ [avoinea]
+
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 8.3 ~ 8.4
+
+* Change: Add integration tests for captchakey and CaptchaVerify
+ [avoinea]
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 11.4 ~ 12.0
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.5 ~ 12.6
+
+* Change: Add unit tests for queryparser and queryfilter modules
+  [avoinea]
+
+##### [eea.api.redirector](https://pypi.org/project/eea.api.redirector/#changelog): 0.2 ~ 0.3
+
+##### [eea.api.versions](https://github.com/eea/eea.api.versions/releases): 1.2 ~ 1.3
+
+* Change: Add integration tests for eea.versions REST API endpoint
+  [avoinea]
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 15.1 ~ 15.2
+
+* Change: Add unit tests for remove_api_string, dedupe_data, and _unicode_save_string_concat
+  [avoinea]
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 2.2 ~ 2.3
+
+* Change: Add unit tests for utils, io_csv, and io_json modules
+  [avoinea]
+
+##### [eea.progress.editing](https://github.com/eea/eea.progress.editing/releases): 3.0 ~ 3.1
+
+* Change: Add integration tests for @editing.progress REST API views
+  [avoinea]
+
+
+## [6.1.3-26](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-26) - 2026-03-26T01:25:31Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-15 ~ 6.1.3-16 
+
+##### eeacms/plone-backend:[6.1.3-16](https://github.com/eea/plone-backend/releases/tag/6.1.3-16)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 11.3 ~ 11.4
+
+* Change: (FIX): Fix 404 page when parent is private refs #284281
+ [dobri1408]
+
+
 ## [6.1.3-25](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-25) - 2026-03-07T01:10:17Z
 
 ### Plone
