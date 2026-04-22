@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [6.1.3-31](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-31) - 2026-04-22T00:12:00Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-20 ~ 6.1.3-21 
+
+##### eeacms/plone-backend:[6.1.3-21](https://github.com/eea/plone-backend/releases/tag/6.1.3-21)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.2 ~ 12.3
+
+* Change: Rename header settings control panel and add @layout-blocks-duplicates endpoint
+ [razvanMiu]
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 15.2 ~ 15.3
+
+* Fix: disableNewBlocks on level 1 sections aggregated level and dissagregate level
+  [avoinea - refs #302095]
+
+
 ## [6.1.3-30](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-30) - 2026-04-18T00:19:06Z
 
 ### Plone
