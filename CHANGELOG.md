@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.1.3-34](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-34) - 2026-04-28T09:57:41Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 15.3 ~ 15.4
+
+* Fix: Fix Folder Icon not showing in indicators - refs #299417
+  [dobri1408 - refs #299417]
+
+
 ## [6.1.3-31](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-31) - 2026-04-22T00:12:00Z
 
 ### Plone
