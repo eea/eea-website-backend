@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [6.1.4-3](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-3) - 2026-04-29T15:23:21Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-1 ~ 6.1.4-2 
+
+##### eeacms/plone-backend:[6.1.4-2](https://github.com/eea/plone-backend/releases/tag/6.1.4-2)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.3 ~ 12.4
+
+* Change: Cleanup printf - TeaserBlockSerializerBase._process_data called
+ [avoinea]
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 15.5 ~ 15.6
+
+* Change: fix: Archive content rule bypass security - refs #299417
+  [avoinea]
+
+
 ## [6.1.4-2](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-2) - 2026-04-29T09:38:51Z
 
 ### Dependency updates
