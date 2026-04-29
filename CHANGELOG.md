@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.1.4-2](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-2) - 2026-04-29T09:38:51Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 15.4 ~ 15.5
+
+* Change: Fix arching not working bypass security 
+  [dobri1408]
+
+
 ## [6.1.4-1](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-1) - 2026-04-29T08:52:09Z
 
 ### Plone
