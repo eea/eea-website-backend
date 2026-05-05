@@ -1,6 +1,149 @@
 # Changelog
 
 
+## [6.1.4-3](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-3) - 2026-04-29T15:23:21Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-1 ~ 6.1.4-2 
+
+##### eeacms/plone-backend:[6.1.4-2](https://github.com/eea/plone-backend/releases/tag/6.1.4-2)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.3 ~ 12.4
+
+* Change: Cleanup printf - TeaserBlockSerializerBase._process_data called
+ [avoinea]
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 15.5 ~ 15.6
+
+* Change: fix: Archive content rule bypass security - refs #299417
+  [avoinea]
+
+
+## [6.1.4-2](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-2) - 2026-04-29T09:38:51Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 15.4 ~ 15.5
+
+* Change: Fix arching not working bypass security 
+  [dobri1408]
+
+
+## [6.1.4-1](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-1) - 2026-04-29T08:52:09Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.3-21 ~ 6.1.4-1 
+
+##### eeacms/plone-backend:[6.1.4-1](https://github.com/eea/plone-backend/releases/tag/6.1.4-1)
+###### Plone
+
+###### Upgrade 6.1.3 ~ 6.1.4 
+
+* Plone [6.1.4](https://plone.org/download/releases/6.1.4)
+
+###### Dependency updates
+
+###### [eventlet](https://pypi.org/project/eventlet/#changelog): 0.40.3 ~ 0.41.0
+
+###### [greenlet](https://pypi.org/project/greenlet/#changelog): 3.2.4 ~ 3.5.0
+
+###### [ijson](https://pypi.org/project/ijson/#changelog): 3.4.0.post0 ~ 3.5.0
+
+###### [odict](https://pypi.org/project/odict/#changelog): 1.9.0 ~ 2.0.0
+
+###### [plumber](https://pypi.org/project/plumber/#changelog): 1.7 ~ 2.0.0
+
+###### New packages
+
+###### [authomatic](https://pypi.org/project/authomatic/#changelog): 1.3.0
+
+###### [bda-cache](https://pypi.org/project/bda-cache/#changelog): 1.3.0
+
+###### [hurry-filesize](https://pypi.org/project/hurry-filesize/#changelog): 0.9
+
+###### [node-ext-ldap](https://pypi.org/project/node-ext-ldap/#changelog): 2.0.0
+
+###### [node-ext-ugm](https://pypi.org/project/node-ext-ugm/#changelog): 2.0.0
+
+###### [pyasn1](https://pypi.org/project/pyasn1/#changelog): 0.6.3
+
+###### [pyyaml](https://pypi.org/project/pyyaml/#changelog): 6.0.3
+
+###### [sentry-sdk](https://pypi.org/project/sentry-sdk/#changelog): 2.58.0
+
+###### [yafowil-bootstrap](https://pypi.org/project/yafowil-bootstrap/#changelog): 2.0.0a2
+
+###### [yafowil-plone](https://pypi.org/project/yafowil-plone/#changelog): 5.0.0
+
+###### [yafowil-widget-array](https://pypi.org/project/yafowil-widget-array/#changelog): 1.8
+
+###### [yafowil-widget-dict](https://pypi.org/project/yafowil-widget-dict/#changelog): 1.9
+
+###### [yafowil-yaml](https://pypi.org/project/yafowil-yaml/#changelog): 2.1
+
+###### [z3c-jbot](https://pypi.org/project/z3c-jbot/#changelog): 3.1
+
+###### Removed packages
+
+###### [Authomatic](https://pypi.org/project/Authomatic/#changelog): 1.3.0
+
+###### [bda.cache](https://pypi.org/project/bda.cache/#changelog): 1.3.0
+
+###### [five.globalrequest](https://pypi.org/project/five.globalrequest/#changelog): 99.1
+
+###### [hurry.filesize](https://pypi.org/project/hurry.filesize/#changelog): 0.9
+
+###### [node.ext.ldap](https://pypi.org/project/node.ext.ldap/#changelog): 1.2
+
+###### [node.ext.ugm](https://pypi.org/project/node.ext.ugm/#changelog): 1.1
+
+###### [plone.synchronize](https://pypi.org/project/plone.synchronize/#changelog): 1.0.4
+
+###### [sentry.sdk](https://pypi.org/project/sentry.sdk/#changelog): 2.45.0
+
+###### [yafowil.bootstrap](https://pypi.org/project/yafowil.bootstrap/#changelog): 2.0.0a2
+
+###### [yafowil.plone](https://pypi.org/project/yafowil.plone/#changelog): 5.0.0
+
+###### [yafowil.widget.array](https://pypi.org/project/yafowil.widget.array/#changelog): 1.7
+
+###### [yafowil.widget.dict](https://pypi.org/project/yafowil.widget.dict/#changelog): 1.8
+
+###### [yafowil.yaml](https://pypi.org/project/yafowil.yaml/#changelog): 2.0
+
+###### Internal
+
+- Upgrade Plone backend to 6.1.4 (#13)
+
+* Upgrade Plone backend to 6.1.4
+
+* fix resolutionimpossible
+
+* Upgrade picked pins
+
+---------
+
+Co-authored-by: Alin Voinea <contact@avoinea.com> - [Teodor Voicu - [`b931d07`](https://github.com/eea/plone-backend/commit/b931d07f32827423ddcd971d45579b8f931ccd77)]
+- fix: tests - [Alin Voinea - [`29aa349`](https://github.com/eea/plone-backend/commit/29aa3491676062d1733d692dcd4c189aff5d37c0)]
+- CHANGELOG.md - [valentinab25 - [`c956dcd`](https://github.com/eea/plone-backend/commit/c956dcdc2b2c4e16b7533164bca11c74cfa848f8)]
+- chore: Fix calculate version, remove wrong docs - [valentinab25 - [`20d7419`](https://github.com/eea/plone-backend/commit/20d74190e6c9475c2529be39b1371e7b857d8979)]
+
+
+## [6.1.3-34](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-34) - 2026-04-28T09:57:41Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 15.3 ~ 15.4
+
+* Fix: Fix Folder Icon not showing in indicators - refs #299417
+  [dobri1408 - refs #299417]
+
+
 ## [6.1.3-31](https://github.com/eea/eea-website-backend/releases/tag/6.1.3-31) - 2026-04-22T00:12:00Z
 
 ### Plone
