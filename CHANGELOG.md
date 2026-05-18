@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.1.4-4](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-4) - 2026-05-08T23:18:54Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.6 ~ 12.7
+
+* Fix: list index out of range
+  [avoinea - sentry #420262]
+
+
 ## [6.1.4-3](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-3) - 2026-04-29T15:23:21Z
 
 ### Plone
