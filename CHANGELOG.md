@@ -1,6 +1,36 @@
 # Changelog
 
 
+## [6.1.4-5](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-5) - 2026-05-22T00:06:57Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-2 ~ 6.1.4-3 
+
+##### eeacms/plone-backend:[6.1.4-3](https://github.com/eea/plone-backend/releases/tag/6.1.4-3)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.4 ~ 12.6
+
+* Fix: Restore Plone 5.2 / Plone 6 compatibility for Scripts/Styles viewlets
+ (try scripts/styles modules, fall back to resource)
+ [valipod]
+
+* Fix: Point Scripts/Styles viewlets to their split modules (.scripts/.styles)
+ [valipod]
+
+###### Internal
+
+- undo Release eea.volto.policy 12.5 - [valentinab25 - [`64cbda6`](https://github.com/eea/plone-backend/commit/64cbda678c004c2ed6a14b29fab9dc69b075d59f)]
+
+### Dependency updates
+
+##### [eea.progress.workflow](https://github.com/eea/eea.progress.workflow/releases): 3.1 ~ 3.2
+
+* Change: Add integration tests for @workflow.progress REST API views
+  [avoinea]
+
+
 ## [6.1.4-4](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-4) - 2026-05-08T23:18:54Z
 
 ### Dependency updates
