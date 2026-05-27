@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [6.1.4-6](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-6) - 2026-05-27T00:39:23Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-3 ~ 6.1.4-4 
+
+##### eeacms/plone-backend:[6.1.4-4](https://github.com/eea/plone-backend/releases/tag/6.1.4-4)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.6 ~ 12.7
+
+* Fix: Override Plone search RSS template to use feed item title property
+ [dobri1408]
+
+### Dependency updates
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 2.3 ~ 2.4
+
+* Change: Implement eea.genai.summary customization
+  [razvanMiu]
+
+
 ## [6.1.4-5](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-5) - 2026-05-22T00:06:57Z
 
 ### Plone
