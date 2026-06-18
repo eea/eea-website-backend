@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.1.4-10](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-10) - 2026-06-18T17:27:00Z
+
+### Internal
+
+- test: increase retry times on failing test - [valentinab25 -  [`a90d1b2`](https://github.com/eea/eea-website-backend/commit/a90d1b2c0e8271ba895beff34a3ebfe94a164f86)]
+
 ## [6.1.4-9](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-9) - 2026-06-18T08:31:09Z
 
 ### Plone
