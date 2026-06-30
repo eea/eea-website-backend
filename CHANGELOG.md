@@ -1,6 +1,19 @@
 # Changelog
 
 
+## [6.1.4-12](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-12) - 2026-06-30T18:17:00Z
+
+### Dependency updates
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 16.0 ~ 16.1
+
+* Fix: Publish contained content rule now bypasses user permissions,
+  so contained items (e.g. chart_static, map_static, visualization) are
+  properly published when the parent Indicator is published by a
+  WebReviewer or HoG user lacking "Review portal content" permission.
+  [avoinea - refs #303236]
+
+
 ## [6.1.4-11](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-11) - 2026-06-25T23:33:10Z
 
 ### Plone
