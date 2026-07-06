@@ -31,7 +31,7 @@ services:
       POSTGRES_DBPASS: zope
       POSTGRES_DBUSER: zope
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: postgres #betterleaks:allow
       TZ: Europe/Bucharest
     volumes:
     - postgres_dump:/postgresql.backup
@@ -46,7 +46,7 @@ services:
     - postgres
     environment:
       PGADMIN_DEFAULT_EMAIL: "alin@eaudeweb.ro"
-      PGADMIN_DEFAULT_PASSWORD: "alin"
+      PGADMIN_DEFAULT_PASSWORD: "alin" #betterleaks:allow
 
   mailtrap:
     image: eaudeweb/mailtrap

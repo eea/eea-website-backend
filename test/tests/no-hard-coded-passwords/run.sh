@@ -2,7 +2,7 @@
 set -e
 
 IFS=$'\n'
-userPasswds=( $(docker run --rm --user 0:0 --entrypoint cut "$1" -d: -f1-2 /etc/passwd) )
+userPasswds=( $(docker run --rm --user 0:0 --entrypoint cut "$1" -d: -f1-2 /etc/passwd) ) #betterleaks:allow
 userShadows=()
 if grep -qE ':x$' <<<"${userPasswds[*]}"; then
 	userShadows=( $(docker run --rm --user 0:0 --entrypoint cut "$1" -d: -f1-2 /etc/shadow || true) )
