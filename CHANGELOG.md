@@ -1,6 +1,50 @@
 # Changelog
 
 
+## [6.1.4-15](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-15) - 2026-07-11T00:34:24Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-9 ~ 6.1.4-10 
+
+##### eeacms/plone-backend:[6.1.4-10](https://github.com/eea/plone-backend/releases/tag/6.1.4-10)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.1 ~ 13.2
+
+* Fix: Delegate to collective.exportimport's image serializers when one of its
+ export markers is present on the request.
+ [claudiaifrim - refs #304938]
+
+
+## [6.1.4-14](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-14) - 2026-07-07T13:38:59Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-8 ~ 6.1.4-9 
+
+##### eeacms/plone-backend:[6.1.4-9](https://github.com/eea/plone-backend/releases/tag/6.1.4-9)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.0 ~ 13.1
+
+* Fix: Normalize internal backend URLs (e.g. backend:8080) saved in volto blocks
+ by SSR to avoid broken links. Add unit tests for URL normalizer.
+ [razvanMiu - refs #305419]
+
+
+## [6.1.4-13](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-13) - 2026-07-05T23:42:19Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-7 ~ 6.1.4-8 
+
+##### eeacms/plone-backend:[6.1.4-8](https://github.com/eea/plone-backend/releases/tag/6.1.4-8)
+###### Internal
+
+- use postgres 14 - [valentinab25 - [`a94bc84`](https://github.com/eea/plone-backend/commit/a94bc84848c3928f235c3667030b8041a20a06be)]
+
+
 ## [6.1.4-12](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-12) - 2026-06-30T18:17:00Z
 
 ### Dependency updates
