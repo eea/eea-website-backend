@@ -23,7 +23,7 @@ def import_to_redis(
     redis_host='localhost',
     redis_port=6379,
     redis_db=0,
-    redis_password=None,
+    redis_password=None, #betterleaks:allow
     key_prefix='',
     cleanup=False
 ):
@@ -35,7 +35,7 @@ def import_to_redis(
         redis_host: Redis host (default: localhost)
         redis_port: Redis port (default: 6379)
         redis_db: Redis database number (default: 0)
-        redis_password: Redis password (default: None)
+        redis_password: Redis password (default: None) #betterleaks:allow
         key_prefix: Prefix for Redis keys (default: '')
         cleanup: Delete existing keys with prefix before importing (default: False)
     """
@@ -46,7 +46,7 @@ def import_to_redis(
             host=redis_host,
             port=redis_port,
             db=redis_db,
-            password=redis_password,
+            password=redis_password, #betterleaks:allow
             decode_responses=True
         )
         # Test connection
@@ -196,7 +196,7 @@ def main():
         redis_host=args.host,
         redis_port=args.port,
         redis_db=args.db,
-        redis_password=args.password,
+        redis_password=args.password, #betterleaks:allow
         key_prefix=args.prefix,
         cleanup=args.cleanup
     )
