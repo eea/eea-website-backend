@@ -13,3 +13,4 @@ rss-provider
 eea.genai.core
 eea.genai.blocks
 eea.genai.summary
+eea.plotly
