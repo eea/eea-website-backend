@@ -9,7 +9,6 @@ eea.api.dataconnector
 eea.coremetadata
 eea.api.redirector
 eea.api.versions
--e git+https://github.com/eea/eea.plotly.git@genai#egg=eea.plotly
 rss-provider
 -e git+https://github.com/eea/eea.genai.core.git@main#egg=eea.genai.core
 -e git+https://github.com/eea/eea.genai.blocks.git@main#egg=eea.genai.blocks
