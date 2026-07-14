@@ -1,6 +1,127 @@
 # Changelog
 
 
+## [6.1.4-16](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-16) - 2026-07-14T00:45:47Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-10 ~ 6.1.4-11 
+
+##### eeacms/plone-backend:[6.1.4-11](https://github.com/eea/plone-backend/releases/tag/6.1.4-11)
+###### Dependency updates
+
+###### [eea.api.controlpanel](https://github.com/eea/eea.api.controlpanel/releases): 1.3 ~ 1.4
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.api.glossary](https://pypi.org/project/eea.api.glossary/#changelog): 1.6 ~ 1.7
+
+###### [eea.api.layout](https://github.com/eea/eea.api.layout/releases): 3.4 ~ 3.5
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.banner](https://github.com/eea/eea.banner/releases): 1.7 ~ 1.8
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.0 ~ 6.1
+
+* Feature: Add the Publication type taxonomy, search configuration,
+ content-type behavior activation and CSV content migration report.
+ [refs #305522]
+
+###### [eea.geolocation](https://github.com/eea/eea.geolocation/releases): 4.0 ~ 4.1
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 8.4 ~ 8.5
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.schema.slate](https://github.com/eea/eea.schema.slate/releases): 1.3 ~ 1.4
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.sentry](https://github.com/eea/eea.sentry/releases): 3.1 ~ 3.2
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.2 ~ 13.3
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.zotero](https://github.com/eea/eea.zotero/releases): 1.5 ~ 1.6
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.8 ~ 12.9
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+##### [eea.api.redirector](https://pypi.org/project/eea.api.redirector/#changelog): 0.3 ~ 0.4
+
+##### [eea.api.versions](https://github.com/eea/eea.api.versions/releases): 1.3 ~ 1.4
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+##### [eea.dexterity.indicators](https://github.com/eea/eea.dexterity.indicators/releases): 16.1 ~ 16.2
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+##### [eea.dexterity.themes](https://github.com/eea/eea.dexterity.themes/releases): 1.5 ~ 1.6
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 2.4 ~ 2.5
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+##### [eea.progress.editing](https://github.com/eea/eea.progress.editing/releases): 3.1 ~ 3.2
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+##### [eea.progress.workflow](https://github.com/eea/eea.progress.workflow/releases): 3.2 ~ 3.3
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+##### [eea.stringinterp](https://github.com/eea/eea.stringinterp/releases): 1.2 ~ 1.3
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+##### [eea.website.policy](https://github.com/eea/eea.website.policy/releases): 4.2 ~ 4.4
+
+* Change: Add betterleaks action
+  [avoinea]
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+### Internal
+
+- Add betterleaks action - [Dobricean Ioan Dorian -  [`a672d0a`](https://github.com/eea/eea-website-backend/commit/a672d0a78680fe668d7b9cd0d9b868e422e434db)]
+- Add betterleaks action
+
+Add betterleaks action - [Alin Voinea -  [`732b7ea`](https://github.com/eea/eea-website-backend/commit/732b7eaf8353c85f2f2fe44a3a1e00b10e031385)]
+
 ## [6.1.4-15](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-15) - 2026-07-11T00:34:24Z
 
 ### Plone
