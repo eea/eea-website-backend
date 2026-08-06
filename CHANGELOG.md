@@ -1,6 +1,29 @@
 # Changelog
 
 
+## [6.1.4-25](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-25) - 2026-08-06T23:39:51Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-12 ~ 6.1.4-14 
+
+##### eeacms/plone-backend:[6.1.4-14](https://github.com/eea/plone-backend/releases/tag/6.1.4-14)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.3 ~ 13.4
+
+* Fix: Override ``@@download`` view to return 404 instead of TypeError (500)
+ when the content type has no primary file field.
+ [avoinea - refs #306552]
+##### eeacms/plone-backend:[6.1.4-13](https://github.com/eea/plone-backend/releases/tag/6.1.4-13)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.2 ~ 6.3
+
+* Change: Fix publication_type taxonomy vocabulary - refs #305522
+ [avoinea]
+
+
 ## [6.1.4-24](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-24) - 2026-08-06T01:01:26Z
 
 ### Plone
