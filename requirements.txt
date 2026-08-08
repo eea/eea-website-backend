@@ -10,3 +10,6 @@ eea.api.redirector
 eea.api.versions
 eea.plotly
 rss-provider
+eea.genai.core
+eea.genai.blocks
+eea.genai.summary
