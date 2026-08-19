@@ -1,6 +1,59 @@
 # Changelog
 
 
+## [6.1.4-38](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-38) - 2026-08-19T00:48:27Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-12 ~ 6.1.4-17 
+
+##### eeacms/plone-backend:[6.1.4-17](https://github.com/eea/plone-backend/releases/tag/6.1.4-17)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.4 ~ 13.6
+
+* Change: Release Move @siblings endpoint from eea.restapi to eea.volto.policy (#123)
+ [avoinea]
+
+* Change: Own the global ``plone.memoize`` cache chooser and its Redis,
+ Memcached, and RAM backends.
+ [razvanMiu]
+
+###### New packages
+
+###### [redis](https://pypi.org/project/redis/#changelog): 8.1.0
+
+###### Internal
+
+- Add redis==8.1.0 - [Alin Voinea - [`b3f4401`](https://github.com/eea/plone-backend/commit/b3f4401bf365e811a648ceaadade2426eda60049)]
+##### eeacms/plone-backend:[6.1.4-16](https://github.com/eea/plone-backend/releases/tag/6.1.4-16)
+###### Internal
+
+- fix: arm64 image builds on github actions - [Alin Voinea - [`35cd2ff`](https://github.com/eea/plone-backend/commit/35cd2ff11bafcc6b19b5fb2425903f94acbee89b)]
+##### eeacms/plone-backend:[6.1.4-15](https://github.com/eea/plone-backend/releases/tag/6.1.4-15)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.3 ~ 6.4
+
+* Change: Release
+ [dobri1408]
+##### eeacms/plone-backend:[6.1.4-14](https://github.com/eea/plone-backend/releases/tag/6.1.4-14)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.3 ~ 13.4
+
+* Fix: Override ``@@download`` view to return 404 instead of TypeError (500)
+ when the content type has no primary file field.
+ [avoinea - refs #306552]
+##### eeacms/plone-backend:[6.1.4-13](https://github.com/eea/plone-backend/releases/tag/6.1.4-13)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.2 ~ 6.3
+
+* Change: Fix publication_type taxonomy vocabulary - refs #305522
+ [avoinea]
+
+
 ## [6.1.4-37](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-37) - 2026-08-17T23:42:56Z
 
 ### Plone
