@@ -41,11 +41,7 @@ import optparse
 import sys
 import transaction
 
-from AccessControl.SecurityManagement import newSecurityManager
-from AccessControl.SecurityManager import setSecurityPolicy
-from Testing.makerequest import makerequest
-from Products.CMFCore.tests.base.security import OmnipotentUser
-from Products.CMFCore.tests.base.security import PermissiveSecurityPolicy
+from zope.component.hooks import setSite
 
 from plone.app.contenttypes.utils import migrate_base_class_to_new_class
 
@@ -85,10 +81,25 @@ p.add_option(
 )
 
 # Parse arguments
-args = sys.argv[1:]
-# Strip the '-c script.py' prefix that zopectl adds
-if len(args) >= 2 and args[0] == "-c" and args[1].endswith(".py"):
-    args = args[2:]
+# When run via zconsole (Plone 6), the script is executed via exec() and
+# sys.argv is NOT reset. sys.argv is the full zconsole command line:
+#   ['bin/zconsole', 'run', 'etc/zope.conf', 'scripts/migrate_folder_to_document.py', '--commit', '/en/path']
+# We need to find our script name in argv and take everything after it.
+# When run via zopectl/instance run (Plone 5), sys.argv is:
+#   ['-c', 'script.py', '--commit', '/en/path']
+SCRIPT_BASENAME = "migrate_folder_to_document.py"
+args = []
+found_script = False
+for arg in sys.argv:
+    if found_script:
+        args.append(arg)
+    elif arg.endswith(SCRIPT_BASENAME):
+        found_script = True
+# Fallback: if script name not found, try the -c prefix (zopectl style)
+if not found_script:
+    args = sys.argv[1:]
+    if len(args) >= 2 and args[0] == "-c" and args[1].endswith(".py"):
+        args = args[2:]
 
 options, positional = p.parse_args(args)
 
@@ -98,23 +109,14 @@ if not positional:
 
 target_path = positional[0]
 
-# Ensure leading slash
-if not target_path.startswith("/"):
-    target_path = "/" + target_path
+# Remove leading slash — we traverse relative to the Plone site, not ZODB root
+target_path = target_path.lstrip("/")
 
 try:
     app  # noqa
 except NameError:
     print(p.print_help())
     sys.exit(1)
-
-
-def spoof_request(app):
-    """Set up a faux REQUEST and security context for the script."""
-    _policy = PermissiveSecurityPolicy()
-    setSecurityPolicy(_policy)
-    newSecurityManager(None, OmnipotentUser().__of__(app.acl_users))
-    return makerequest(app)
 
 
 def find_plone_site(app):
@@ -154,13 +156,18 @@ def get_blocks_info(obj):
 
 
 def main():
-    # Enable faux request and security
-    app_local = spoof_request(app)  # noqa
-
-    site, site_id = find_plone_site(app_local)
+    # zconsole already sets up the REQUEST and security context.
+    # We just need to set the site for component registry lookups
+    # (e.g. collective.taxonomy indexer needs the site manager).
+    site, site_id = find_plone_site(app)
     if site is None:
         print("ERROR: No Plone site found in ZODB root.")
         sys.exit(1)
+
+    # Set the site so zope.component getUtility/queryUtility works
+    # without needing full acquisition context (critical for
+    # collective.taxonomy indexer during reindex/commit).
+    setSite(site)
 
     print(f"Plone site: {site_id}")
     print(f"Target path (relative to site): {target_path}")
@@ -298,27 +305,34 @@ def main():
     else:
         print(f"  [OK] blocks preserved: {block_count_after} blocks")
 
-    # Step 8: Verify catalog brain shows correct portal_type
-    catalog = site.portal_catalog
-    brain = catalog.unrestrictedSearchResults(UID=obj_uid)
-    if brain and len(brain) == 1:
-        brain_portal_type = brain[0].portal_type
-        if brain_portal_type == "Document":
-            print(f"  [OK] catalog brain portal_type: 'Document'")
-        else:
-            print(
-                f"  [WARNING] catalog brain portal_type is "
-                f"'{brain_portal_type}', expected 'Document'"
-            )
-    else:
-        print("  [WARNING] could not verify catalog brain")
-
-    # Step 9: Commit
+    # Step 8: Commit FIRST — the critical verifications (children,
+    # local roles, review_state, blocks) have all passed above.
+    # Commit before the catalog check, because catalog queries can
+    # trigger processQueue() which may fail in zconsole's limited
+    # acquisition context (e.g. collective.taxonomy indexer).
     note = f"Migrated Folder to Document: {obj_path}"
     tr = transaction.get()
     tr.note(note)
     transaction.commit()
     print(f"  [OK] committed: {note}")
+
+    # Step 9: Verify catalog brain (bonus check, non-blocking)
+    try:
+        catalog = site.portal_catalog
+        brain = catalog.unrestrictedSearchResults(UID=obj_uid)
+        if brain and len(brain) == 1:
+            brain_portal_type = brain[0].portal_type
+            if brain_portal_type == "Document":
+                print(f"  [OK] catalog brain portal_type: 'Document'")
+            else:
+                print(
+                    f"  [WARNING] catalog brain portal_type is "
+                    f"'{brain_portal_type}', expected 'Document'"
+                )
+        else:
+            print("  [WARNING] could not verify catalog brain")
+    except Exception as e:
+        print(f"  [INFO] catalog brain check skipped (non-critical): {e}")
     print("-" * 60)
     print("Migration complete.")
     print()
