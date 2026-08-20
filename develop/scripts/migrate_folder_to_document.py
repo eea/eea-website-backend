@@ -2,16 +2,18 @@
 """Migrate a single Folder content type to Document (in-place).
 
 Usage:
-    bin/rel_client run scripts/migrate_folder_to_document.py [options] /en/about/contact-us
+    bin/zconsole run etc/zope.conf scripts/migrate_folder_to_document.py [options] <path>
+    bin/zconsole run etc/relstorage.conf scripts/migrate_folder_to_document.py [options] <path>
 
     # Dry-run (default) — logs what would change, makes NO changes:
-    bin/rel_client run scripts/migrate_folder_to_document.py /en/about/contact-us
+    bin/zconsole run etc/zope.conf scripts/migrate_folder_to_document.py /en/about/contact-us
 
     # Commit — actually perform the migration:
-    bin/rel_client run scripts/migrate_folder_to_document.py --commit /en/about/contact-us
+    bin/zconsole run etc/zope.conf scripts/migrate_folder_to_document.py --commit /en/about/contact-us
 
-    # Inside a Docker container:
-    docker exec <container> bin/rel_client run scripts/migrate_folder_to_document.py /en/about/contact-us
+    # Inside a Docker container (uses relstorage.conf automatically):
+    docker exec <container> /app/docker-entrypoint.sh run scripts/migrate_folder_to_document.py /en/about/contact-us
+    docker exec <container> /app/docker-entrypoint.sh run scripts/migrate_folder_to_document.py --commit /en/about/contact-us
 
 The path argument is relative to the Plone site root (e.g. /en/about/contact-us).
 
@@ -49,9 +51,11 @@ from plone.app.contenttypes.utils import migrate_base_class_to_new_class
 
 version = "1.0.0"
 usage = (
-    "Usage: bin/rel_client run scripts/migrate_folder_to_document.py [options] "
+    "Usage: bin/zconsole run etc/<config>.conf scripts/migrate_folder_to_document.py [options] "
     "<path-relative-to-plone-site>\n"
-    "  e.g. bin/rel_client run scripts/migrate_folder_to_document.py /en/about/contact-us"
+    "  e.g. bin/zconsole run etc/zope.conf scripts/migrate_folder_to_document.py /en/about/contact-us\n"
+    "  or   bin/zconsole run etc/relstorage.conf scripts/migrate_folder_to_document.py /en/about/contact-us\n"
+    "  or   docker exec <container> /app/docker-entrypoint.sh run scripts/migrate_folder_to_document.py /en/about/contact-us"
 )
 description = (
     "Migrate a single Folder to Document in-place. "
