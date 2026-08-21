@@ -1,6 +1,88 @@
 # Changelog
 
 
+## [6.1.4-41](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-41) - 2026-08-21T23:41:47Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-12 ~ 6.1.4-18 
+
+##### eeacms/plone-backend:[6.1.4-18](https://github.com/eea/plone-backend/releases/tag/6.1.4-18)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.6 ~ 13.7
+
+* Fix: Apply ``CACHE_TTL`` consistently to the RAM fallback as well as Redis
+ and Memcached.
+ [razvanMiu]
+##### eeacms/plone-backend:[6.1.4-17](https://github.com/eea/plone-backend/releases/tag/6.1.4-17)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.4 ~ 13.6
+
+* Change: Release Move @siblings endpoint from eea.restapi to eea.volto.policy (#123)
+ [avoinea]
+
+* Change: Own the global ``plone.memoize`` cache chooser and its Redis,
+ Memcached, and RAM backends.
+ [razvanMiu]
+
+###### New packages
+
+###### [redis](https://pypi.org/project/redis/#changelog): 8.1.0
+
+###### Internal
+
+- Add redis==8.1.0 - [Alin Voinea - [`b3f4401`](https://github.com/eea/plone-backend/commit/b3f4401bf365e811a648ceaadade2426eda60049)]
+##### eeacms/plone-backend:[6.1.4-16](https://github.com/eea/plone-backend/releases/tag/6.1.4-16)
+###### Internal
+
+- fix: arm64 image builds on github actions - [Alin Voinea - [`35cd2ff`](https://github.com/eea/plone-backend/commit/35cd2ff11bafcc6b19b5fb2425903f94acbee89b)]
+##### eeacms/plone-backend:[6.1.4-15](https://github.com/eea/plone-backend/releases/tag/6.1.4-15)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.3 ~ 6.4
+
+* Change: Release
+ [dobri1408]
+##### eeacms/plone-backend:[6.1.4-14](https://github.com/eea/plone-backend/releases/tag/6.1.4-14)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.3 ~ 13.4
+
+* Fix: Override ``@@download`` view to return 404 instead of TypeError (500)
+ when the content type has no primary file field.
+ [avoinea - refs #306552]
+##### eeacms/plone-backend:[6.1.4-13](https://github.com/eea/plone-backend/releases/tag/6.1.4-13)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.2 ~ 6.3
+
+* Change: Fix publication_type taxonomy vocabulary - refs #305522
+ [avoinea]
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.9 ~ 13.0
+
+* Fix: Invalidate memoized connector data when provider content changes; TTL
+  continues to bound staleness of external data sources.
+  [razvanMiu]
+* Fix: normalize empty connector-data responses and validate virtual-page
+  preload envelopes.
+  [razvanMiu]
+* Change: document connector payload as public SSR request identity metadata.
+  [razvanMiu]
+* Change: Move the global ``plone.memoize`` cache policy to
+  ``eea.volto.policy``.
+  [razvanMiu]
+
+### Internal
+
+- change: Script to migrate Folder to Document - refs #305576 - [Alin Voinea -  [`1d4ceaf`](https://github.com/eea/eea-website-backend/commit/1d4ceaf5db327ccb27592cce67af096a68f3fcd5)]
+- Fix migration script readme - [Alin Voinea -  [`6bea3e9`](https://github.com/eea/eea-website-backend/commit/6bea3e9eaf1bd6903b7ffc05fabcc4e3a1863ca8)]
+- Fix migration script - [Alin Voinea -  [`1b97d97`](https://github.com/eea/eea-website-backend/commit/1b97d973b37a5f116dfd9c900c56b9473d7ae814)]
+
 ## [6.1.4-40](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-40) - 2026-08-20T23:34:59Z
 
 ### Plone
