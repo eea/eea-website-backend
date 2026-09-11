@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.1.4-47](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-47) - 2026-09-11T23:42:25Z
+
+### Internal
+
+- Update plone-contraints.txt - [Alin Voinea -  [`21770d4`](https://github.com/eea/eea-website-backend/commit/21770d4002b800d63a4b28d7c09f9bb3e3e3a1b7)]
+
 ## [6.1.4-46](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-46) - 2026-08-25T23:32:35Z
 
 ### Plone
