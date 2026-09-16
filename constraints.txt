@@ -10,6 +10,9 @@ eea.api.dataconnector==13.0
 eea.api.redirector==0.4
 eea.api.versions==1.4
 eea.plotly==2.5
+eea.genai.core==1.2
+eea.genai.blocks==1.0
+eea.genai.summary==1.0
 mo-sql-parsing==9.367.23090
 mo-parsing==8.366.23085
 XlsxWriter==3.0.9
