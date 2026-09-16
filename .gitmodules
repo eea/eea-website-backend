@@ -1,3 +1,0 @@
-[submodule "develop/frontend"]
-	path = develop/frontend
-	url = https://github.com/eea/eea-website-frontend
