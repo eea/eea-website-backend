@@ -1,6 +1,30 @@
 # Changelog
 
 
+## [6.1.4-48](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-48) - 2026-09-16T23:51:51Z
+
+### Dependency updates
+
+#### New packages
+
+##### [eea.genai.blocks](https://github.com/eea/eea.genai.blocks): 1.0
+
+##### [eea.genai.core](https://github.com/eea/eea.genai.core): 1.2
+
+##### [eea.genai.summary](https://github.com/eea/eea.genai.summary): 1.0
+
+### Internal
+
+- add genai addons (#12)
+
+* add genai addons
+
+* Pin genai dependencies
+
+---------
+
+Co-authored-by: Alin Voinea <contact@avoinea.com> - [Miu Razvan -  [`f95d4a7`](https://github.com/eea/eea-website-backend/commit/f95d4a71710e14f1df7e4cdd76fb1afd927ba6be)]
+
 ## [6.1.4-47](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-47) - 2026-09-11T23:42:25Z
 
 ### Internal
