@@ -1,6 +1,30 @@
 # Changelog
 
 
+## [6.1.4-50](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-50) - 2026-09-26T01:15:56Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-19 ~ 6.1.4-20 
+
+##### eeacms/plone-backend:[6.1.4-20](https://github.com/eea/plone-backend/releases/tag/6.1.4-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.7 ~ 13.8
+
+* Change: Add Subsite Behaviour, Expose main logo setting in Subsite REST response
+ [tedw87]
+* Feature: Add support for sort_on and sort_order through portal_actions
+ [nileshgulia1]
+
+### Dependency updates
+
+##### [eea.website.policy](https://github.com/eea/eea.website.policy/releases): 4.4 ~ 4.5
+
+* Change: Add context_navigation actions for Epanet Subsite
+  [nileshgulia1]
+
+
 ## [6.1.4-49](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-49) - 2026-09-18T14:55:23Z
 
 ### Plone
