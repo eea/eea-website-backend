@@ -5,7 +5,8 @@ eea.dexterity.themes==1.6
 eea.progress.editing==3.2
 eea.progress.workflow==3.3
 eea.stringinterp==1.3
-eea.website.policy==4.5
+eea.website.policy @ git+https://github.com/eea/eea.website.policy.git@develop#egg=eea.website.policy
+eea.volto.policy @ git+https://github.com/eea/eea.volto.policy.git@develop#egg=eea.volto.policy
 eea.api.dataconnector==13.0
 eea.api.redirector==0.4
 eea.api.versions==1.4
