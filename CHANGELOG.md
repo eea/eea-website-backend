@@ -1,6 +1,51 @@
 # Changelog
 
 
+## [6.1.4-53](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-53) - 2026-10-02T00:58:28Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-22 ~ 6.1.4-23 
+
+##### eeacms/plone-backend:[6.1.4-23](https://github.com/eea/plone-backend/releases/tag/6.1.4-23)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 14.0 ~ 14.1
+
+* Change: Add children sort_order and sort_on for given portal_types to sort
+ [nileshgulia1]
+
+
+## [6.1.4-52](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-52) - 2026-10-01T00:38:45Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-21 ~ 6.1.4-22 
+
+##### eeacms/plone-backend:[6.1.4-22](https://github.com/eea/plone-backend/releases/tag/6.1.4-22)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.9 ~ 14.0
+
+* Change: Revert to no subsite logo behavior, not needed 
+ [tedw87]
+
+
+## [6.1.4-51](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-51) - 2026-09-30T00:00:27Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-20 ~ 6.1.4-21 
+
+##### eeacms/plone-backend:[6.1.4-21](https://github.com/eea/plone-backend/releases/tag/6.1.4-21)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.8 ~ 13.9
+
+* Change: Release - Restore subsite expansion adapter for subsite_logo_main
+ [tedw87]
+
+
 ## [6.1.4-50](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-50) - 2026-09-26T01:15:56Z
 
 ### Plone
