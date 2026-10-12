@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.1.4-54](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-54) - 2026-10-12T23:38:22Z
+
+### Dependency updates
+
+##### [eea.website.policy](https://github.com/eea/eea.website.policy/releases): 4.5 ~ 4.6
+
+* Change: Remove epanet_our_group action and introduce children_sort_on fields
+  [nileshgulia1]
+
+
 ## [6.1.4-53](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-53) - 2026-10-02T00:58:28Z
 
 ### Plone
