@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.1.4-55](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-55) - 2026-10-13T23:36:06Z
+
+### Dependency updates
+
+##### [eea.api.versions](https://github.com/eea/eea.api.versions/releases): 1.4 ~ 1.5
+
+* Change: fix: sort versions by effective date instead of creation date - refs #309424
+  [ana-oprea]
+
+
 ## [6.1.4-54](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-54) - 2026-10-12T23:38:22Z
 
 ### Dependency updates
