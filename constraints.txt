@@ -5,11 +5,11 @@ eea.dexterity.themes==1.6
 eea.progress.editing==3.2
 eea.progress.workflow==3.3
 eea.stringinterp==1.3
-eea.website.policy @ git+https://github.com/eea/eea.website.policy.git@develop#egg=eea.website.policy
+eea.website.policy==4.6
 eea.volto.policy @ git+https://github.com/eea/eea.volto.policy.git@image-alt#egg=eea.volto.policy
 eea.api.dataconnector==13.0
 eea.api.redirector==0.4
-eea.api.versions==1.4
+eea.api.versions==1.5
 eea.plotly==2.5
 eea.genai.core @ git+https://github.com/eea/eea.genai.core.git@develop#egg=eea.genai.core
 eea.genai.blocks==1.0
