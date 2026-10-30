@@ -90,6 +90,10 @@ develop:		## Develop source.ini add-ons using mxdev
 	bin/mxdev -c sources.ini
 	uv pip install -r requirements-mxdev.txt
 
+.PHONY: issues
+issues: 		## Check github for open pull-requests
+	python3 ./scripts/pull-requests.py WARN
+
 .PHONY: status
 status: 		## Check sources for changes
 	./scripts/status.sh
