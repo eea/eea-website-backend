@@ -1,6 +1,94 @@
 # Changelog
 
 
+## [6.1.4-56](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-56) - 2026-10-30T00:34:10Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-23 ~ 6.1.4-24 
+
+##### eeacms/plone-backend:[6.1.4-24](https://github.com/eea/plone-backend/releases/tag/6.1.4-24)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 14.1 ~ 14.2
+
+* Feature: enrich serialized internal Image blocks with the permission-safe
+ live Image title, lazily classify legacy alt provenance, and remove the
+ transient title again during deserialization (issue #305021).
+ [razvanMiu]
+
+### Dependency updates
+
+##### [eea.genai.core](https://github.com/eea/eea.genai.core/releases): 1.2 ~ 1.3
+
+* Change: Multimodal enrichers, extensible settings sections, and SSR feature flags
+  [razvanMiu]
+* Feature: packages can contribute settings sections to both GenAI
+  controlpanels through named ``IGenAISettingsSection`` utilities, without
+  introducing package-specific dependencies into core.
+* Feature: expose explicitly allowlisted feature flags through public
+  ``GET @genai-settings`` for frontend SSR. Administrative configuration is
+  not included in this response.
+* Fix: cap ``fastmcp<4`` and ``mcp<2`` — pydantic-ai 1.107.0 is
+  incompatible with the mcp SDK 2.x (``mcp.shared.context.RequestContext``
+  was removed) and its unpinned ``fastmcp>=3.3.0`` requirement drifted to
+  fastmcp 4.x -> mcp 2.x, breaking the ``pydantic_ai.mcp`` import on fresh
+  installs (issue #305021)
+* Feature: multimodal prompts — enrichers can now contribute non-text
+  content parts (e.g. pydantic_ai ``ImageUrl``) to the agent's user
+  prompt via ``Enricher.content_parts()`` (issue #305021)
+* Feature: agents can opt in to AI-generated summary markers via the
+  ``summary_markers`` config key (issue #305021)
+* Feature: agents can cap summary length via the ``max_summary_length``
+  config key — generation is retried once when the model overshoots
+  (consumed by eea.genai.summary.generate) (issue #305021)
+  [razvanMiu refs #305021]
+
+##### [eea.genai.summary](https://github.com/eea/eea.genai.summary/releases): 1.0 ~ 2.1
+
+* Feature: contribute Image AI settings to the shared GenAI controlpanel:
+  disabled by default, shared title/alt maximum of 64 characters, and
+  description maximum of 500 characters. Both global and Image switches
+  must permit generation.
+  [razvanMiu refs #305021]
+* Feature: apply configured character limits to Image generation prompts
+  and validated responses; retry oversized output once, then fail without
+  truncation.
+  [razvanMiu refs #305021]
+* Upgrade: profile 1.0 to 2.0 installs the Image AI registry records only,
+  preserving existing settings without purging records or importing dependencies.
+  No core upgrade or legacy Image behavior cleanup is included.
+  [razvanMiu refs #305021]
+* Feature: add stateless ``@image-metadata`` and ``@image-alt`` services.
+  The first analyses unpersisted upload bytes and returns validated title and
+  description before ordinary Image creation; the second returns a validated,
+  non-persisting alt suggestion for an existing Image.
+  [razvanMiu refs #305021]
+* Security: transient image analysis validates base64, media type, decoded
+  size, dimensions, total pixels, MIME/content agreement, and Pillow
+  decompression-bomb signals before model invocation. Invalid transient input
+  fails closed and unverified original bytes are never sent to the provider.
+  [razvanMiu refs #305021]
+* Feature: dedicated structured-output ``image_metadata`` and ``image_alt``
+  agents return plain marker-free values with bounded lengths and controlled
+  output language.
+  [razvanMiu refs #305021]
+* Change: remove the undeployed Image creation subscriber, Image-specific
+  ``llm_summary`` agent coupling, and ``llm_summary`` portal-catalog metadata
+  column. Generic behavior-driven summaries remain unchanged for content that
+  explicitly provides ``ILLMSummary``.
+  [razvanMiu refs #305021]
+* Fix: ``@llm-summary-batch`` commits each object individually, validates
+  limit/offset, reports detailed status/counts, and isolates per-object
+  failures.
+  [razvanMiu refs #305021]
+* Fix: ``@llm-summary`` and ``@llm-summary-batch`` requests are exempt from
+  plone.protect CSRF checks in line with plone.restapi content services.
+* Add a handler-only uninstall profile so the add-on can be uninstalled without
+  a missing-profile warning.
+  [razvanMiu refs #305021]
+
+
 ## [6.1.4-55](https://github.com/eea/eea-website-backend/releases/tag/6.1.4-55) - 2026-10-13T23:36:06Z
 
 ### Dependency updates
