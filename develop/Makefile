@@ -42,7 +42,7 @@ endif
 ##############################################################################
 # SETTINGS AND VARIABLE
 
-PLONE_VERSION=6.1.3
+PLONE_VERSION=6.1.5
 #`docker run -i --rm eeacms/plone-backend env | grep PLONE_VERSION | sed "s/PLONE_VERSION=//g"`
 PYTHON?=python3.12
 
@@ -64,8 +64,7 @@ bootstrap:		## Bootstrap python environment
 install:		## Install Plone and develop add-ons
 	bin/pip install Plone plone.volto -c plone-constraints.txt
 	bin/pip install zope.testrunner plone.app.testing plone.reload dm.plonepatches.reload collective.exportimport -c plone-constraints.txt
-	bin/pip install relstorage==4.1.1 psycopg2==2.9.10 python-ldap==3.4.5 pas.plugins.ldap==1.8.4 -c plone-constraints.txt
-	bin/pip install plone.app.upgrade==3.3.1
+	bin/pip install relstorage==4.3.0 psycopg2==2.9.13 python-ldap==3.4.8 pas.plugins.ldap==1.8.4 -c plone-constraints.txt
 	bin/mkwsgiinstance -d . -u admin:admin
 	mkdir -p var/blobstorage var/filestorage
 
