@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [6.1.5-2](https://github.com/eea/eea-website-backend/releases/tag/6.1.5-2) - 2026-10-30T12:49:45Z
+
+### Internal
+
+- chore: Improve make issues dev command - [Alin Voinea -  [`f04bd71`](https://github.com/eea/eea-website-backend/commit/f04bd71ba8b022f4b7f01e524dd03864ff3b56f6)]
+- fix: Keep betterleaks allow comment on the password assignment
+
+ruff format wrapped the credential read and moved the '# betterleaks:allow'
+comment to the closing parenthesis, so secret-literal-assignment flagged the
+self.password assignment line. Read the credentials in a dedicated method so
+the assignment and its allow comment stay on one short line. - [Alin Voinea -  [`11cc541`](https://github.com/eea/eea-website-backend/commit/11cc5411bc4c52945f85cf1bcd4c4d71cca806e2)]
+- chore: Upgrade dev environment to Plone 6.1.5
+
+Bump PLONE_VERSION to 6.1.5 and refresh the tracked plone-constraints.txt
+snapshot from dist.plone.org/release/6.1.5/constraints.txt.
+
+Drop the explicit plone.app.upgrade==3.3.1 install: Plone 6.1.5 ships 3.3.2,
+so the old pin would have downgraded it.
+
+Bump the RelStorage dev pins: relstorage 4.3.0, psycopg2 2.9.13,
+python-ldap 3.4.8 (pas.plugins.ldap 1.8.4 was already current). - [Alin Voinea -  [`0ec9048`](https://github.com/eea/eea-website-backend/commit/0ec90482ad26664f9f7426c32249f298c13fc1c3)]
+
 ## [6.1.5-1](https://github.com/eea/eea-website-backend/releases/tag/6.1.5-1) - 2026-10-30T11:42:46Z
 
 ### Plone
