@@ -45,10 +45,30 @@ In order to develop Plone 6 backend add-ons run:
     make
     make start
 
+The virtual environment is created in `.venv`:
+
+    source .venv/bin/activate
+
 To use other **Python** version run make with `-e` parameter:
 
     make -e PYTHON=python3.10
     make start
+
+### Docker Sandbox (sbx)
+
+Inside a Docker Sandbox run `make sandbox` once per new sandbox instead of `make`:
+
+    make sandbox
+
+It installs the native build dependencies Plone needs (libpq, libldap, libxml2, libjpeg ...),
+installs Python 3.12 with `uv` (the sandbox ships a newer Python than Plone 6.1 supports) and
+then runs `make all`. The Makefile detects the sandbox (`SANDBOX_NAME`/`WORKSPACE_DIR`) and
+builds the environment in `.venv-sbx`, so the host `.venv` in the same bind-mounted directory
+keeps working.
+
+The sandbox network policy blocks `dist.plone.org`; allow it once on the host:
+
+    sbx policy allow network dist.plone.org
 
 
 ## Develop
@@ -84,7 +104,7 @@ See also: [Debugging Plone in Visual Studio Code](https://community.plone.org/t/
 
 You can manually run test in terminal, like:
 
-    bin/zope-testrunner --test-path sources/eea.kitkat
+    .venv/bin/zope-testrunner --test-path sources/eea.kitkat
 
 Or via `Visual Studio Code`
 * Go to `Run > Start Debugging (F5)` and select `Test Plone` debugger.

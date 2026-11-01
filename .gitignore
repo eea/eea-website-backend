@@ -13,3 +13,5 @@ sources/
 var/
 *.bak
 *~
+.venv-sbx/
+.venv/

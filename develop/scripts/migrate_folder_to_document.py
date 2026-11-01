@@ -2,14 +2,14 @@
 """Migrate a single Folder content type to Document (in-place).
 
 Usage:
-    bin/zconsole run etc/zope.conf scripts/migrate_folder_to_document.py [options] <path>
-    bin/zconsole run etc/relstorage.conf scripts/migrate_folder_to_document.py [options] <path>
+    .venv/bin/zconsole run etc/zope.conf scripts/migrate_folder_to_document.py [options] <path>
+    .venv/bin/zconsole run etc/relstorage.conf scripts/migrate_folder_to_document.py [options] <path>
 
     # Dry-run (default) — logs what would change, makes NO changes:
-    bin/zconsole run etc/zope.conf scripts/migrate_folder_to_document.py /en/about/contact-us
+    .venv/bin/zconsole run etc/zope.conf scripts/migrate_folder_to_document.py /en/about/contact-us
 
     # Commit — actually perform the migration:
-    bin/zconsole run etc/zope.conf scripts/migrate_folder_to_document.py --commit /en/about/contact-us
+    .venv/bin/zconsole run etc/zope.conf scripts/migrate_folder_to_document.py --commit /en/about/contact-us
 
     # Inside a Docker container (uses relstorage.conf automatically):
     docker exec <container> /app/docker-entrypoint.sh run scripts/migrate_folder_to_document.py /en/about/contact-us
@@ -47,10 +47,10 @@ from plone.app.contenttypes.utils import migrate_base_class_to_new_class
 
 version = "1.0.0"
 usage = (
-    "Usage: bin/zconsole run etc/<config>.conf scripts/migrate_folder_to_document.py [options] "
+    "Usage: .venv/bin/zconsole run etc/<config>.conf scripts/migrate_folder_to_document.py [options] "
     "<path-relative-to-plone-site>\n"
-    "  e.g. bin/zconsole run etc/zope.conf scripts/migrate_folder_to_document.py /en/about/contact-us\n"
-    "  or   bin/zconsole run etc/relstorage.conf scripts/migrate_folder_to_document.py /en/about/contact-us\n"
+    "  e.g. .venv/bin/zconsole run etc/zope.conf scripts/migrate_folder_to_document.py /en/about/contact-us\n"
+    "  or   .venv/bin/zconsole run etc/relstorage.conf scripts/migrate_folder_to_document.py /en/about/contact-us\n"
     "  or   docker exec <container> /app/docker-entrypoint.sh run scripts/migrate_folder_to_document.py /en/about/contact-us"
 )
 description = (
@@ -83,7 +83,7 @@ p.add_option(
 # Parse arguments
 # When run via zconsole (Plone 6), the script is executed via exec() and
 # sys.argv is NOT reset. sys.argv is the full zconsole command line:
-#   ['bin/zconsole', 'run', 'etc/zope.conf', 'scripts/migrate_folder_to_document.py', '--commit', '/en/path']
+#   ['.venv/bin/zconsole', 'run', 'etc/zope.conf', 'scripts/migrate_folder_to_document.py', '--commit', '/en/path']
 # We need to find our script name in argv and take everything after it.
 # When run via zopectl/instance run (Plone 5), sys.argv is:
 #   ['-c', 'script.py', '--commit', '/en/path']
