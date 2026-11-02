@@ -1,6 +1,29 @@
 # Changelog
 
 
+## [6.1.5-3](https://github.com/eea/eea-website-backend/releases/tag/6.1.5-3) - 2026-11-02T00:20:12Z
+
+### Internal
+
+- feat: Run the development environment in Docker Sandboxes
+
+sbx bind-mounts the workspace at its host path but runs a different OS, so the
+venv created on the host cannot be used there, and `python -m venv` used to
+overwrite it in place. Move the environment out of the checkout: `.venv` on the
+host and `.venv-sbx` inside a sandbox (detected via SANDBOX_NAME/WORKSPACE_DIR,
+which sbx exports), so both can coexist in the same bind-mounted directory.
+
+`make sandbox` prepares a fresh sandbox: it installs the native build
+dependencies Plone needs when a wheel is missing (libpq, libldap, libxml2,
+libjpeg, ... - the plone/container-backend Dockerfile.builder list, mapped to
+Ubuntu 26.04 names), installs Python 3.12 with uv (the sandbox ships 3.14, newer
+than Plone 6.1 supports) and then runs `make all`. Outside a sandbox it is a
+no-op.
+
+Also download plone-constraints.txt atomically: a request blocked by the
+sandbox network policy answered with an error body and clobbered the tracked
+file. - [Alin Voinea -  [`096acfa`](https://github.com/eea/eea-website-backend/commit/096acfa014587c64564e9265818228abc769d354)]
+
 ## [6.1.5-2](https://github.com/eea/eea-website-backend/releases/tag/6.1.5-2) - 2026-10-30T12:49:45Z
 
 ### Internal
